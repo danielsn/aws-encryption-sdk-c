@@ -1,0 +1,2292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cprover>
+<program>CBMC 5.12 (cbmc-5.11-3198-gba239893d)</program>
+<message type="STATUS-MESSAGE">
+  <text>CBMC version 5.12 (cbmc-5.11-3198-gba239893d) 64-bit x86_64 macos</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Reading GOTO program from file</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Reading: aws_cryptosdk_edk_list_clear.goto</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Generating GOTO Program</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Adding CPROVER library (x86_64)</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Removal of function pointers and virtual functions</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Generic Property Instrumentation</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Rewriting existing assertions as assumptions</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Running with 8 object bits, 56 offset bits (user-specified)</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Starting Bounded Model Checking</text>
+</message>
+
+<message type="WARNING">
+  <text>**** WARNING: no body for function __builtin___CFStringMakeConstantString</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>aborting path on assume(false) at file &lt;builtin-library-abort&gt; line 6 function abort thread 0</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Unwinding loop aws_cryptosdk_edk_list_clear.0 iteration 1 file /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-enc-sdk-src/edk.c line 41 function aws_cryptosdk_edk_list_clear thread 0</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>aborting path on assume(false) at file &lt;builtin-library-abort&gt; line 6 function abort thread 0</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Not unwinding loop aws_cryptosdk_edk_list_clear.0 iteration 2 file /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-enc-sdk-src/edk.c line 41 function aws_cryptosdk_edk_list_clear thread 0</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>size of program expression: 3238 steps</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Generated 509 VCC(s), 509 remaining after simplification</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Passing problem to propositional reduction</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>converting SSA</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Running propositional reduction</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Post-processing</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Solving with MiniSAT 2.2.1 with simplifier</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>648588 variables, 3434509 clauses</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>SAT checker: instance is SATISFIABLE</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Runtime decision procedure: 7.50872s</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Building error trace</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Running propositional reduction</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Solving with MiniSAT 2.2.1 with simplifier</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>648588 variables, 2400686 clauses</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>SAT checker: instance is SATISFIABLE</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Runtime decision procedure: 0.360903s</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Building error trace</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Running propositional reduction</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Solving with MiniSAT 2.2.1 with simplifier</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>648588 variables, 2400623 clauses</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>SAT checker: instance is SATISFIABLE</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Runtime decision procedure: 0.0723812s</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Building error trace</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Running propositional reduction</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Solving with MiniSAT 2.2.1 with simplifier</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>648588 variables, 2400624 clauses</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>SAT checker: instance is SATISFIABLE</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Runtime decision procedure: 1.25931s</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Building error trace</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Running propositional reduction</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Solving with MiniSAT 2.2.1 with simplifier</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>648588 variables, 2400625 clauses</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>SAT checker: instance is SATISFIABLE</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Runtime decision procedure: 0.381977s</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Building error trace</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Running propositional reduction</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Solving with MiniSAT 2.2.1 with simplifier</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>648588 variables, 2399427 clauses</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>SAT checker: instance is SATISFIABLE</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Runtime decision procedure: 0.098896s</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Building error trace</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Running propositional reduction</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Solving with MiniSAT 2.2.1 with simplifier</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>648588 variables, 2399309 clauses</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>SAT checker: instance is SATISFIABLE</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Runtime decision procedure: 0.0801609s</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Building error trace</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Running propositional reduction</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Solving with MiniSAT 2.2.1 with simplifier</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>648588 variables, 2399309 clauses</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>SAT checker: instance is SATISFIABLE</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Runtime decision procedure: 0.236288s</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Building error trace</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Running propositional reduction</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Solving with MiniSAT 2.2.1 with simplifier</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>648588 variables, 2399309 clauses</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>SAT checker: instance is SATISFIABLE</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Runtime decision procedure: 0.0798463s</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Building error trace</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Running propositional reduction</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Solving with MiniSAT 2.2.1 with simplifier</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>648588 variables, 2399309 clauses</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>SAT checker: instance is SATISFIABLE</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Runtime decision procedure: 0.0788556s</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Building error trace</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Running propositional reduction</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Solving with MiniSAT 2.2.1 with simplifier</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>648588 variables, 2399309 clauses</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>SAT checker: instance is SATISFIABLE</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Runtime decision procedure: 0.0756799s</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Building error trace</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Running propositional reduction</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Solving with MiniSAT 2.2.1 with simplifier</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>648588 variables, 2399309 clauses</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>SAT checker: instance is SATISFIABLE</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Runtime decision procedure: 0.076058s</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Building error trace</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Running propositional reduction</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Solving with MiniSAT 2.2.1 with simplifier</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>648588 variables, 2399309 clauses</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>SAT checker: instance is SATISFIABLE</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Runtime decision procedure: 0.0739944s</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Building error trace</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Running propositional reduction</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Solving with MiniSAT 2.2.1 with simplifier</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>648588 variables, 2399309 clauses</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>SAT checker: instance is SATISFIABLE</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Runtime decision procedure: 0.0824952s</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Building error trace</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Running propositional reduction</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Solving with MiniSAT 2.2.1 with simplifier</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>648588 variables, 2399309 clauses</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>SAT checker: instance is SATISFIABLE</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Runtime decision procedure: 0.10428s</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Building error trace</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Running propositional reduction</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Solving with MiniSAT 2.2.1 with simplifier</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>648588 variables, 2399309 clauses</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>SAT checker: instance is SATISFIABLE</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Runtime decision procedure: 0.0736945s</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Building error trace</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Running propositional reduction</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Solving with MiniSAT 2.2.1 with simplifier</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>648588 variables, 2399309 clauses</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>SAT checker: instance is UNSATISFIABLE</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>Runtime decision procedure: 0.079611s</text>
+</message>
+
+<goal description="block 5 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/math.cbmc.inl:aws_mul_u64_checked:48)" id="aws_mul_u64_checked$link1.coverage.5" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/math.cbmc.inl" function="aws_mul_u64_checked$link1" line="48" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 4 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/math.cbmc.inl:aws_mul_u64_checked:46,47)" id="aws_mul_u64_checked$link1.coverage.4" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/math.cbmc.inl" function="aws_mul_u64_checked$link1" line="46" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 3 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/math.cbmc.inl:aws_mul_u64_checked:45)" id="aws_mul_u64_checked$link1.coverage.3" status="FAILED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/math.cbmc.inl" function="aws_mul_u64_checked$link1" line="45" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 2 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/math.cbmc.inl:aws_mul_u64_checked:45)" id="aws_mul_u64_checked$link1.coverage.2" status="FAILED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/math.cbmc.inl" function="aws_mul_u64_checked$link1" line="45" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 1 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/math.cbmc.inl:aws_mul_u64_checked:44)" id="aws_mul_u64_checked$link1.coverage.1" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/math.cbmc.inl" function="aws_mul_u64_checked$link1" line="44" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 1 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-helper-src/utils.c:nondet_compare:118-121)" id="nondet_compare.coverage.1" status="FAILED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-helper-src/utils.c" function="nondet_compare" line="118" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 2 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-helper-src/proof_allocators.c:bounded_malloc:71,72)" id="bounded_malloc.coverage.2" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-helper-src/proof_allocators.c" function="bounded_malloc" line="71" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 1 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-helper-src/proof_allocators.c:bounded_malloc:70,71)" id="bounded_malloc.coverage.1" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-helper-src/proof_allocators.c" function="bounded_malloc" line="70" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 28 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/error.c:aws_raise_error_private:116)" id="aws_raise_error_private.coverage.28" status="FAILED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/error.c" function="aws_raise_error_private" line="116" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 27 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/error.c:aws_raise_error_private:114)" id="aws_raise_error_private.coverage.27" status="FAILED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/error.c" function="aws_raise_error_private" line="114" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 26 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/error.c:aws_raise_error_private:114)" id="aws_raise_error_private.coverage.26" status="FAILED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/error.c" function="aws_raise_error_private" line="114" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 25 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/error.c:aws_raise_error_private:114)" id="aws_raise_error_private.coverage.25" status="FAILED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/error.c" function="aws_raise_error_private" line="114" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 24 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/error.c:aws_raise_error_private:114)" id="aws_raise_error_private.coverage.24" status="FAILED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/error.c" function="aws_raise_error_private" line="114" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 23 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/error.c:aws_raise_error_private:114)" id="aws_raise_error_private.coverage.23" status="FAILED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/error.c" function="aws_raise_error_private" line="114" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 22 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/error.c:aws_raise_error_private:114)" id="aws_raise_error_private.coverage.22" status="FAILED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/error.c" function="aws_raise_error_private" line="114" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 21 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/error.c:aws_raise_error_private:114)" id="aws_raise_error_private.coverage.21" status="FAILED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/error.c" function="aws_raise_error_private" line="114" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 20 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/error.c:aws_raise_error_private:114)" id="aws_raise_error_private.coverage.20" status="FAILED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/error.c" function="aws_raise_error_private" line="114" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 19 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/error.c:aws_raise_error_private:114)" id="aws_raise_error_private.coverage.19" status="FAILED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/error.c" function="aws_raise_error_private" line="114" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 18 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/error.c:aws_raise_error_private:114)" id="aws_raise_error_private.coverage.18" status="FAILED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/error.c" function="aws_raise_error_private" line="114" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 17 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/error.c:aws_raise_error_private:114)" id="aws_raise_error_private.coverage.17" status="FAILED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/error.c" function="aws_raise_error_private" line="114" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 16 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/error.c:aws_raise_error_private:114)" id="aws_raise_error_private.coverage.16" status="FAILED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/error.c" function="aws_raise_error_private" line="114" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 15 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/error.c:aws_raise_error_private:113)" id="aws_raise_error_private.coverage.15" status="FAILED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/error.c" function="aws_raise_error_private" line="113" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 14 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/error.c:aws_raise_error_private:112)" id="aws_raise_error_private.coverage.14" status="FAILED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/error.c" function="aws_raise_error_private" line="112" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 13 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/error.c:aws_raise_error_private:112)" id="aws_raise_error_private.coverage.13" status="FAILED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/error.c" function="aws_raise_error_private" line="112" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 12 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/error.c:aws_raise_error_private:112)" id="aws_raise_error_private.coverage.12" status="FAILED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/error.c" function="aws_raise_error_private" line="112" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 11 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/error.c:aws_raise_error_private:112)" id="aws_raise_error_private.coverage.11" status="FAILED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/error.c" function="aws_raise_error_private" line="112" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 10 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/error.c:aws_raise_error_private:112)" id="aws_raise_error_private.coverage.10" status="FAILED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/error.c" function="aws_raise_error_private" line="112" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 9 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/error.c:aws_raise_error_private:112)" id="aws_raise_error_private.coverage.9" status="FAILED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/error.c" function="aws_raise_error_private" line="112" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 8 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/error.c:aws_raise_error_private:112)" id="aws_raise_error_private.coverage.8" status="FAILED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/error.c" function="aws_raise_error_private" line="112" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 7 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/error.c:aws_raise_error_private:112)" id="aws_raise_error_private.coverage.7" status="FAILED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/error.c" function="aws_raise_error_private" line="112" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 6 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/error.c:aws_raise_error_private:112)" id="aws_raise_error_private.coverage.6" status="FAILED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/error.c" function="aws_raise_error_private" line="112" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 5 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/error.c:aws_raise_error_private:112)" id="aws_raise_error_private.coverage.5" status="FAILED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/error.c" function="aws_raise_error_private" line="112" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 4 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/error.c:aws_raise_error_private:112)" id="aws_raise_error_private.coverage.4" status="FAILED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/error.c" function="aws_raise_error_private" line="112" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 3 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/error.c:aws_raise_error_private:112)" id="aws_raise_error_private.coverage.3" status="FAILED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/error.c" function="aws_raise_error_private" line="112" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 2 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/error.c:aws_raise_error_private:112)" id="aws_raise_error_private.coverage.2" status="FAILED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/error.c" function="aws_raise_error_private" line="112" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 1 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/error.c:aws_raise_error_private:109,111)" id="aws_raise_error_private.coverage.1" status="FAILED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/error.c" function="aws_raise_error_private" line="109" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 13 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-helper-src/make_common_data_structures.c:ensure_array_list_has_allocated_data_member:61)" id="ensure_array_list_has_allocated_data_member.coverage.13" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-helper-src/make_common_data_structures.c" function="ensure_array_list_has_allocated_data_member" line="61" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 12 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-helper-src/make_common_data_structures.c:ensure_array_list_has_allocated_data_member:59,60)" id="ensure_array_list_has_allocated_data_member.coverage.12" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-helper-src/make_common_data_structures.c" function="ensure_array_list_has_allocated_data_member" line="59" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 11 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-helper-src/make_common_data_structures.c:ensure_array_list_has_allocated_data_member:59)" id="ensure_array_list_has_allocated_data_member.coverage.11" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-helper-src/make_common_data_structures.c" function="ensure_array_list_has_allocated_data_member" line="59" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 10 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-helper-src/make_common_data_structures.c:ensure_array_list_has_allocated_data_member:59)" id="ensure_array_list_has_allocated_data_member.coverage.10" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-helper-src/make_common_data_structures.c" function="ensure_array_list_has_allocated_data_member" line="59" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 9 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-helper-src/make_common_data_structures.c:ensure_array_list_has_allocated_data_member:59)" id="ensure_array_list_has_allocated_data_member.coverage.9" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-helper-src/make_common_data_structures.c" function="ensure_array_list_has_allocated_data_member" line="59" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 8 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-helper-src/make_common_data_structures.c:ensure_array_list_has_allocated_data_member:58,59)" id="ensure_array_list_has_allocated_data_member.coverage.8" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-helper-src/make_common_data_structures.c" function="ensure_array_list_has_allocated_data_member" line="58" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 7 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-helper-src/make_common_data_structures.c:ensure_array_list_has_allocated_data_member:58)" id="ensure_array_list_has_allocated_data_member.coverage.7" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-helper-src/make_common_data_structures.c" function="ensure_array_list_has_allocated_data_member" line="58" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 6 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-helper-src/make_common_data_structures.c:ensure_array_list_has_allocated_data_member:56)" id="ensure_array_list_has_allocated_data_member.coverage.6" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-helper-src/make_common_data_structures.c" function="ensure_array_list_has_allocated_data_member" line="56" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 5 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-helper-src/make_common_data_structures.c:ensure_array_list_has_allocated_data_member:55,56)" id="ensure_array_list_has_allocated_data_member.coverage.5" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-helper-src/make_common_data_structures.c" function="ensure_array_list_has_allocated_data_member" line="55" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 4 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-helper-src/make_common_data_structures.c:ensure_array_list_has_allocated_data_member:54)" id="ensure_array_list_has_allocated_data_member.coverage.4" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-helper-src/make_common_data_structures.c" function="ensure_array_list_has_allocated_data_member" line="54" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 3 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-helper-src/make_common_data_structures.c:ensure_array_list_has_allocated_data_member:54)" id="ensure_array_list_has_allocated_data_member.coverage.3" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-helper-src/make_common_data_structures.c" function="ensure_array_list_has_allocated_data_member" line="54" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 2 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-helper-src/make_common_data_structures.c:ensure_array_list_has_allocated_data_member:54)" id="ensure_array_list_has_allocated_data_member.coverage.2" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-helper-src/make_common_data_structures.c" function="ensure_array_list_has_allocated_data_member" line="54" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 1 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-helper-src/make_common_data_structures.c:ensure_array_list_has_allocated_data_member:54)" id="ensure_array_list_has_allocated_data_member.coverage.1" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-helper-src/make_common_data_structures.c" function="ensure_array_list_has_allocated_data_member" line="54" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 13 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/common.c:aws_mem_release:160)" id="aws_mem_release.coverage.13" status="FAILED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/common.c" function="aws_mem_release" line="160" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 12 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/common.c:aws_mem_release:159)" id="aws_mem_release.coverage.12" status="FAILED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/common.c" function="aws_mem_release" line="159" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 11 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/common.c:aws_mem_release:159)" id="aws_mem_release.coverage.11" status="FAILED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/common.c" function="aws_mem_release" line="159" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 10 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/common.c:aws_mem_release:159)" id="aws_mem_release.coverage.10" status="FAILED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/common.c" function="aws_mem_release" line="159" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 9 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/common.c:aws_mem_release:159)" id="aws_mem_release.coverage.9" status="FAILED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/common.c" function="aws_mem_release" line="159" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 8 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/common.c:aws_mem_release:159)" id="aws_mem_release.coverage.8" status="FAILED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/common.c" function="aws_mem_release" line="159" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 7 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/common.c:aws_mem_release:159)" id="aws_mem_release.coverage.7" status="FAILED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/common.c" function="aws_mem_release" line="159" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 6 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/common.c:aws_mem_release:159)" id="aws_mem_release.coverage.6" status="FAILED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/common.c" function="aws_mem_release" line="159" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 5 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/common.c:aws_mem_release:159)" id="aws_mem_release.coverage.5" status="FAILED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/common.c" function="aws_mem_release" line="159" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 4 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/common.c:aws_mem_release:159)" id="aws_mem_release.coverage.4" status="FAILED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/common.c" function="aws_mem_release" line="159" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 3 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/common.c:aws_mem_release:159)" id="aws_mem_release.coverage.3" status="FAILED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/common.c" function="aws_mem_release" line="159" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 2 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/common.c:aws_mem_release:159)" id="aws_mem_release.coverage.2" status="FAILED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/common.c" function="aws_mem_release" line="159" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 1 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/common.c:aws_mem_release:159)" id="aws_mem_release.coverage.1" status="FAILED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/common.c" function="aws_mem_release" line="159" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 2 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-helper-src/proof_allocators.c:s_can_fail_free_allocator:43)" id="s_can_fail_free_allocator.coverage.2" status="FAILED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-helper-src/proof_allocators.c" function="s_can_fail_free_allocator" line="43" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 1 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-helper-src/proof_allocators.c:s_can_fail_free_allocator:41,42)" id="s_can_fail_free_allocator.coverage.1" status="FAILED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-helper-src/proof_allocators.c" function="s_can_fail_free_allocator" line="41" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 11 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl:aws_array_list_is_valid:90)" id="aws_array_list_is_valid$link1.coverage.11" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl" function="aws_array_list_is_valid$link1" line="90" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 10 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl:aws_array_list_is_valid:88,89)" id="aws_array_list_is_valid$link1.coverage.10" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl" function="aws_array_list_is_valid$link1" line="88" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 9 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl:aws_array_list_is_valid:88)" id="aws_array_list_is_valid$link1.coverage.9" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl" function="aws_array_list_is_valid$link1" line="88" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 8 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl:aws_array_list_is_valid:88)" id="aws_array_list_is_valid$link1.coverage.8" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl" function="aws_array_list_is_valid$link1" line="88" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 7 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl:aws_array_list_is_valid:88)" id="aws_array_list_is_valid$link1.coverage.7" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl" function="aws_array_list_is_valid$link1" line="88" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 6 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl:aws_array_list_is_valid:88)" id="aws_array_list_is_valid$link1.coverage.6" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl" function="aws_array_list_is_valid$link1" line="88" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 5 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl:aws_array_list_is_valid:88)" id="aws_array_list_is_valid$link1.coverage.5" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl" function="aws_array_list_is_valid$link1" line="88" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 4 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl:aws_array_list_is_valid:86-88)" id="aws_array_list_is_valid$link1.coverage.4" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl" function="aws_array_list_is_valid$link1" line="86" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 3 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl:aws_array_list_is_valid:85,86)" id="aws_array_list_is_valid$link1.coverage.3" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl" function="aws_array_list_is_valid$link1" line="85" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 2 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl:aws_array_list_is_valid:83)" id="aws_array_list_is_valid$link1.coverage.2" status="FAILED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl" function="aws_array_list_is_valid$link1" line="83" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 18 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/byte_buf.c:aws_byte_buf_is_valid:68)" id="aws_byte_buf_is_valid.coverage.18" status="FAILED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/byte_buf.c" function="aws_byte_buf_is_valid" line="68" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 12 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/byte_buf.c:aws_byte_buf_is_valid:69)" id="aws_byte_buf_is_valid.coverage.12" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/byte_buf.c" function="aws_byte_buf_is_valid" line="69" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 11 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/byte_buf.c:aws_byte_buf_is_valid:69)" id="aws_byte_buf_is_valid.coverage.11" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/byte_buf.c" function="aws_byte_buf_is_valid" line="69" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 10 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/byte_buf.c:aws_byte_buf_is_valid:69)" id="aws_byte_buf_is_valid.coverage.10" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/byte_buf.c" function="aws_byte_buf_is_valid" line="69" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 9 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/byte_buf.c:aws_byte_buf_is_valid:69)" id="aws_byte_buf_is_valid.coverage.9" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/byte_buf.c" function="aws_byte_buf_is_valid" line="69" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 8 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/byte_buf.c:aws_byte_buf_is_valid:69)" id="aws_byte_buf_is_valid.coverage.8" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/byte_buf.c" function="aws_byte_buf_is_valid" line="69" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 7 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/byte_buf.c:aws_byte_buf_is_valid:68)" id="aws_byte_buf_is_valid.coverage.7" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/byte_buf.c" function="aws_byte_buf_is_valid" line="68" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 6 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/byte_buf.c:aws_byte_buf_is_valid:68)" id="aws_byte_buf_is_valid.coverage.6" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/byte_buf.c" function="aws_byte_buf_is_valid" line="68" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 5 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/byte_buf.c:aws_byte_buf_is_valid:68)" id="aws_byte_buf_is_valid.coverage.5" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/byte_buf.c" function="aws_byte_buf_is_valid" line="68" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 4 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/byte_buf.c:aws_byte_buf_is_valid:68)" id="aws_byte_buf_is_valid.coverage.4" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/byte_buf.c" function="aws_byte_buf_is_valid" line="68" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 3 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/byte_buf.c:aws_byte_buf_is_valid:68)" id="aws_byte_buf_is_valid.coverage.3" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/byte_buf.c" function="aws_byte_buf_is_valid" line="68" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 2 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/byte_buf.c:aws_byte_buf_is_valid:68)" id="aws_byte_buf_is_valid.coverage.2" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/byte_buf.c" function="aws_byte_buf_is_valid" line="68" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 1 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/byte_buf.c:aws_byte_buf_is_valid:68)" id="aws_byte_buf_is_valid.coverage.1" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/byte_buf.c" function="aws_byte_buf_is_valid" line="68" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 1 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-helper-src/make_common_data_structures.c:aws_array_list_is_bounded:48-51)" id="aws_array_list_is_bounded.coverage.1" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-helper-src/make_common_data_structures.c" function="aws_array_list_is_bounded" line="48" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 9 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl:aws_array_list_get_at_ptr:282)" id="aws_array_list_get_at_ptr.coverage.9" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl" function="aws_array_list_get_at_ptr" line="282" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 8 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl:aws_array_list_get_at_ptr:281)" id="aws_array_list_get_at_ptr.coverage.8" status="FAILED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl" function="aws_array_list_get_at_ptr" line="281" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 7 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl:aws_array_list_get_at_ptr:280,281)" id="aws_array_list_get_at_ptr.coverage.7" status="FAILED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl" function="aws_array_list_get_at_ptr" line="280" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 6 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl:aws_array_list_get_at_ptr:280)" id="aws_array_list_get_at_ptr.coverage.6" status="FAILED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl" function="aws_array_list_get_at_ptr" line="280" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 5 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl:aws_array_list_get_at_ptr:277,278)" id="aws_array_list_get_at_ptr.coverage.5" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl" function="aws_array_list_get_at_ptr" line="277" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 4 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl:aws_array_list_get_at_ptr:276,277)" id="aws_array_list_get_at_ptr.coverage.4" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl" function="aws_array_list_get_at_ptr" line="276" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 3 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl:aws_array_list_get_at_ptr:275)" id="aws_array_list_get_at_ptr.coverage.3" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl" function="aws_array_list_get_at_ptr" line="275" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 2 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl:aws_array_list_get_at_ptr:273-275)" id="aws_array_list_get_at_ptr.coverage.2" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl" function="aws_array_list_get_at_ptr" line="273" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 1 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl:aws_array_list_get_at_ptr:273)" id="aws_array_list_get_at_ptr.coverage.1" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl" function="aws_array_list_get_at_ptr" line="273" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 8 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-enc-sdk-src/edk.c:aws_cryptosdk_edk_list_clear:48)" id="aws_cryptosdk_edk_list_clear.coverage.8" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-enc-sdk-src/edk.c" function="aws_cryptosdk_edk_list_clear" line="48" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 7 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-enc-sdk-src/edk.c:aws_cryptosdk_edk_list_clear:46,47)" id="aws_cryptosdk_edk_list_clear.coverage.7" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-enc-sdk-src/edk.c" function="aws_cryptosdk_edk_list_clear" line="46" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 6 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-enc-sdk-src/edk.c:aws_cryptosdk_edk_list_clear:41,46)" id="aws_cryptosdk_edk_list_clear.coverage.6" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-enc-sdk-src/edk.c" function="aws_cryptosdk_edk_list_clear" line="46" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 5 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-enc-sdk-src/edk.c:aws_cryptosdk_edk_list_clear:44)" id="aws_cryptosdk_edk_list_clear.coverage.5" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-enc-sdk-src/edk.c" function="aws_cryptosdk_edk_list_clear" line="44" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 4 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-enc-sdk-src/edk.c:aws_cryptosdk_edk_list_clear:43)" id="aws_cryptosdk_edk_list_clear.coverage.4" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-enc-sdk-src/edk.c" function="aws_cryptosdk_edk_list_clear" line="43" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 3 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-enc-sdk-src/edk.c:aws_cryptosdk_edk_list_clear:42,43)" id="aws_cryptosdk_edk_list_clear.coverage.3" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-enc-sdk-src/edk.c" function="aws_cryptosdk_edk_list_clear" line="42" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 2 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-enc-sdk-src/edk.c:aws_cryptosdk_edk_list_clear:41)" id="aws_cryptosdk_edk_list_clear.coverage.2" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-enc-sdk-src/edk.c" function="aws_cryptosdk_edk_list_clear" line="41" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 1 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-enc-sdk-src/edk.c:aws_cryptosdk_edk_list_clear:40,41)" id="aws_cryptosdk_edk_list_clear.coverage.1" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-enc-sdk-src/edk.c" function="aws_cryptosdk_edk_list_clear" line="40" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 2 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-enc-sdk-src/edk.c:aws_cryptosdk_edk_clean_up:32,37)" id="aws_cryptosdk_edk_clean_up.coverage.2" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-enc-sdk-src/edk.c" function="aws_cryptosdk_edk_clean_up" line="32" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 1 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-enc-sdk-src/edk.c:aws_cryptosdk_edk_clean_up:32)" id="aws_cryptosdk_edk_clean_up.coverage.1" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-enc-sdk-src/edk.c" function="aws_cryptosdk_edk_clean_up" line="32" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 2 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/math.h:aws_mul_size_checked:139,143)" id="aws_mul_size_checked$link1.coverage.2" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/math.h" function="aws_mul_size_checked$link1" line="139" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 1 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/math.h:aws_mul_size_checked:139)" id="aws_mul_size_checked$link1.coverage.1" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/math.h" function="aws_mul_size_checked$link1" line="139" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 11 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl:aws_array_list_is_valid:90)" id="aws_array_list_is_valid.coverage.11" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl" function="aws_array_list_is_valid" line="90" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 7 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl:aws_array_list_is_valid:88)" id="aws_array_list_is_valid.coverage.7" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl" function="aws_array_list_is_valid" line="88" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 1 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl:aws_array_list_is_valid:82)" id="aws_array_list_is_valid.coverage.1" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl" function="aws_array_list_is_valid" line="82" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 2 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/error.h:aws_raise_error:95,96)" id="aws_raise_error.coverage.2" status="FAILED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/error.h" function="aws_raise_error" line="95" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 1 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/error.h:aws_raise_error:93)" id="aws_raise_error.coverage.1" status="FAILED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/error.h" function="aws_raise_error" line="93" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 8 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl:aws_array_list_length:254-256)" id="aws_array_list_length.coverage.8" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl" function="aws_array_list_length" line="254" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 7 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl:aws_array_list_length:252-254)" id="aws_array_list_length.coverage.7" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl" function="aws_array_list_length" line="252" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 6 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl:aws_array_list_length:252)" id="aws_array_list_length.coverage.6" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl" function="aws_array_list_length" line="252" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 5 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl:aws_array_list_length:251)" id="aws_array_list_length.coverage.5" status="FAILED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl" function="aws_array_list_length" line="251" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 4 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl:aws_array_list_length:251)" id="aws_array_list_length.coverage.4" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl" function="aws_array_list_length" line="251" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 3 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl:aws_array_list_length:251)" id="aws_array_list_length.coverage.3" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl" function="aws_array_list_length" line="251" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 2 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl:aws_array_list_length:251)" id="aws_array_list_length.coverage.2" status="FAILED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl" function="aws_array_list_length" line="251" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 1 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl:aws_array_list_length:251)" id="aws_array_list_length.coverage.1" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl" function="aws_array_list_length" line="251" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 1 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-helper-src/proof_allocators.c:can_fail_allocator:75,76)" id="can_fail_allocator.coverage.1" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-helper-src/proof_allocators.c" function="can_fail_allocator" line="75" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 2 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/common.c:s_cf_allocator_deallocate:222)" id="s_cf_allocator_deallocate.coverage.2" status="FAILED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/common.c" function="s_cf_allocator_deallocate" line="222" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 1 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/common.c:s_cf_allocator_deallocate:217,219,221)" id="s_cf_allocator_deallocate.coverage.1" status="FAILED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/common.c" function="s_cf_allocator_deallocate" line="217" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 5 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/math.cbmc.inl:aws_mul_u64_checked:48)" id="aws_mul_u64_checked.coverage.5" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/math.cbmc.inl" function="aws_mul_u64_checked" line="48" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 2 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/math.h:aws_mul_size_checked:139,143)" id="aws_mul_size_checked.coverage.2" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/math.h" function="aws_mul_size_checked" line="139" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 1 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/math.h:aws_mul_size_checked:139)" id="aws_mul_size_checked.coverage.1" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/math.h" function="aws_mul_size_checked" line="139" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 2 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/common.c:s_default_free:44)" id="s_default_free.coverage.2" status="FAILED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/common.c" function="s_default_free" line="44" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 1 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl:aws_array_list_is_valid:82)" id="aws_array_list_is_valid$link1.coverage.1" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl" function="aws_array_list_is_valid$link1" line="82" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 1 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/common.c:s_default_free:42,43)" id="s_default_free.coverage.1" status="FAILED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/common.c" function="s_default_free" line="42" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 2 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/error.h:aws_raise_error:95,96)" id="aws_raise_error$link1.coverage.2" status="FAILED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/error.h" function="aws_raise_error$link1" line="95" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 10 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-enc-sdk-src/edk.c:aws_cryptosdk_edk_is_valid:18,21)" id="aws_cryptosdk_edk_is_valid.coverage.10" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-enc-sdk-src/edk.c" function="aws_cryptosdk_edk_is_valid" line="18" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 1 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/error.h:aws_raise_error:93)" id="aws_raise_error$link1.coverage.1" status="FAILED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/error.h" function="aws_raise_error$link1" line="93" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 9 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-enc-sdk-src/edk.c:aws_cryptosdk_edk_is_valid:20)" id="aws_cryptosdk_edk_is_valid.coverage.9" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-enc-sdk-src/edk.c" function="aws_cryptosdk_edk_is_valid" line="20" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 8 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-enc-sdk-src/edk.c:aws_cryptosdk_edk_is_valid:20)" id="aws_cryptosdk_edk_is_valid.coverage.8" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-enc-sdk-src/edk.c" function="aws_cryptosdk_edk_is_valid" line="20" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 5 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl:aws_array_list_clear:215,216)" id="aws_array_list_clear.coverage.5" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl" function="aws_array_list_clear" line="215" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 7 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-enc-sdk-src/edk.c:aws_cryptosdk_edk_is_valid:20)" id="aws_cryptosdk_edk_is_valid.coverage.7" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-enc-sdk-src/edk.c" function="aws_cryptosdk_edk_is_valid" line="20" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 3 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl:aws_array_list_clear:213)" id="aws_array_list_clear.coverage.3" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl" function="aws_array_list_clear" line="213" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 5 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-enc-sdk-src/edk.c:aws_cryptosdk_edk_is_valid:18)" id="aws_cryptosdk_edk_is_valid.coverage.5" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-enc-sdk-src/edk.c" function="aws_cryptosdk_edk_is_valid" line="18" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 2 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl:aws_array_list_clear:208,209)" id="aws_array_list_clear.coverage.2" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl" function="aws_array_list_clear" line="208" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 4 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-enc-sdk-src/edk.c:aws_cryptosdk_edk_is_valid:18,19)" id="aws_cryptosdk_edk_is_valid.coverage.4" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-enc-sdk-src/edk.c" function="aws_cryptosdk_edk_is_valid" line="19" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 10 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl:aws_array_list_is_valid:88,89)" id="aws_array_list_is_valid.coverage.10" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl" function="aws_array_list_is_valid" line="88" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 1 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl:aws_array_list_clear:208)" id="aws_array_list_clear.coverage.1" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl" function="aws_array_list_clear" line="208" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 3 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-enc-sdk-src/edk.c:aws_cryptosdk_edk_is_valid:19)" id="aws_cryptosdk_edk_is_valid.coverage.3" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-enc-sdk-src/edk.c" function="aws_cryptosdk_edk_is_valid" line="19" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 9 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl:aws_array_list_is_valid:88)" id="aws_array_list_is_valid.coverage.9" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl" function="aws_array_list_is_valid" line="88" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 2 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-enc-sdk-src/edk.c:aws_cryptosdk_edk_is_valid:18)" id="aws_cryptosdk_edk_is_valid.coverage.2" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-enc-sdk-src/edk.c" function="aws_cryptosdk_edk_is_valid" line="18" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 8 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl:aws_array_list_is_valid:88)" id="aws_array_list_is_valid.coverage.8" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl" function="aws_array_list_is_valid" line="88" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 19 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/byte_buf.c:aws_byte_buf_is_valid:68,70)" id="aws_byte_buf_is_valid.coverage.19" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/byte_buf.c" function="aws_byte_buf_is_valid" line="68" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 1 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-enc-sdk-src/edk.c:aws_cryptosdk_edk_is_valid:18)" id="aws_cryptosdk_edk_is_valid.coverage.1" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-enc-sdk-src/edk.c" function="aws_cryptosdk_edk_is_valid" line="18" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 6 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl:aws_array_list_is_valid:88)" id="aws_array_list_is_valid.coverage.6" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl" function="aws_array_list_is_valid" line="88" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 17 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/byte_buf.c:aws_byte_buf_is_valid:68)" id="aws_byte_buf_is_valid.coverage.17" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/byte_buf.c" function="aws_byte_buf_is_valid" line="68" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 5 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/aws_cryptosdk_edk_list_clear_harness.c:harness:34)" id="harness.coverage.5" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/aws_cryptosdk_edk_list_clear_harness.c" function="harness" line="34" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 4 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/math.cbmc.inl:aws_mul_u64_checked:46,47)" id="aws_mul_u64_checked.coverage.4" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/math.cbmc.inl" function="aws_mul_u64_checked" line="46" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 5 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl:aws_array_list_is_valid:88)" id="aws_array_list_is_valid.coverage.5" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl" function="aws_array_list_is_valid" line="88" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 16 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/byte_buf.c:aws_byte_buf_is_valid:69)" id="aws_byte_buf_is_valid.coverage.16" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/byte_buf.c" function="aws_byte_buf_is_valid" line="69" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 4 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/aws_cryptosdk_edk_list_clear_harness.c:harness:27,30)" id="harness.coverage.4" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/aws_cryptosdk_edk_list_clear_harness.c" function="harness" line="27" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 3 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/math.cbmc.inl:aws_mul_u64_checked:45)" id="aws_mul_u64_checked.coverage.3" status="FAILED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/math.cbmc.inl" function="aws_mul_u64_checked" line="45" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 4 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl:aws_array_list_is_valid:86-88)" id="aws_array_list_is_valid.coverage.4" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl" function="aws_array_list_is_valid" line="86" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 15 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/byte_buf.c:aws_byte_buf_is_valid:69)" id="aws_byte_buf_is_valid.coverage.15" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/byte_buf.c" function="aws_byte_buf_is_valid" line="69" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 3 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/aws_cryptosdk_edk_list_clear_harness.c:harness:27)" id="harness.coverage.3" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/aws_cryptosdk_edk_list_clear_harness.c" function="harness" line="27" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 2 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/math.cbmc.inl:aws_mul_u64_checked:45)" id="aws_mul_u64_checked.coverage.2" status="FAILED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/math.cbmc.inl" function="aws_mul_u64_checked" line="45" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 3 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl:aws_array_list_is_valid:85,86)" id="aws_array_list_is_valid.coverage.3" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl" function="aws_array_list_is_valid" line="85" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 14 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/byte_buf.c:aws_byte_buf_is_valid:69)" id="aws_byte_buf_is_valid.coverage.14" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/byte_buf.c" function="aws_byte_buf_is_valid" line="69" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 2 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/aws_cryptosdk_edk_list_clear_harness.c:harness:25,26)" id="harness.coverage.2" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/aws_cryptosdk_edk_list_clear_harness.c" function="harness" line="25" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 4 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl:aws_array_list_clear:215)" id="aws_array_list_clear.coverage.4" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl" function="aws_array_list_clear" line="215" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 6 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-enc-sdk-src/edk.c:aws_cryptosdk_edk_is_valid:20)" id="aws_cryptosdk_edk_is_valid.coverage.6" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-enc-sdk-src/edk.c" function="aws_cryptosdk_edk_is_valid" line="20" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 1 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/math.cbmc.inl:aws_mul_u64_checked:44)" id="aws_mul_u64_checked.coverage.1" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/math.cbmc.inl" function="aws_mul_u64_checked" line="44" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 2 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl:aws_array_list_is_valid:83)" id="aws_array_list_is_valid.coverage.2" status="FAILED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-inc/aws/common/array_list.inl" function="aws_array_list_is_valid" line="83" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 13 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/byte_buf.c:aws_byte_buf_is_valid:69)" id="aws_byte_buf_is_valid.coverage.13" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/c-common-src/byte_buf.c" function="aws_byte_buf_is_valid" line="69" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<goal description="block 1 (lines /Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/aws_cryptosdk_edk_list_clear_harness.c:harness:22,25)" id="harness.coverage.1" status="SATISFIED">
+  <location file="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear/link-farm/aws_cryptosdk_edk_list_clear_harness.c" function="harness" line="22" working-directory="/Users/felisous/Documents/projects/aws-encryption-sdk-c/.cbmc-batch/jobs/aws_cryptosdk_edk_list_clear"/>
+</goal>
+
+<message type="STATUS-MESSAGE">
+  <text>** 107 of 171 covered (62.6%)</text>
+</message>
+
+<message type="STATUS-MESSAGE">
+  <text>** Used 17 iterations</text>
+</message>
+
+<test>
+  <inputs/>
+  <goal id="harness.coverage.1"/>
+  <goal id="harness.coverage.2"/>
+  <goal id="aws_array_list_is_bounded.coverage.1"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.1"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.3"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.4"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.7"/>
+  <goal id="bounded_malloc.coverage.1"/>
+</test>
+
+<test>
+  <inputs/>
+  <goal id="harness.coverage.1"/>
+  <goal id="harness.coverage.2"/>
+  <goal id="harness.coverage.3"/>
+  <goal id="harness.coverage.4"/>
+  <goal id="harness.coverage.5"/>
+  <goal id="aws_mul_size_checked.coverage.1"/>
+  <goal id="aws_mul_size_checked.coverage.2"/>
+  <goal id="aws_mul_u64_checked.coverage.1"/>
+  <goal id="aws_mul_u64_checked.coverage.4"/>
+  <goal id="aws_mul_u64_checked.coverage.5"/>
+  <goal id="aws_array_list_is_valid.coverage.1"/>
+  <goal id="aws_array_list_is_valid.coverage.3"/>
+  <goal id="aws_array_list_is_valid.coverage.4"/>
+  <goal id="aws_array_list_is_valid.coverage.6"/>
+  <goal id="aws_array_list_is_valid.coverage.7"/>
+  <goal id="aws_array_list_is_valid.coverage.9"/>
+  <goal id="aws_array_list_is_valid.coverage.10"/>
+  <goal id="aws_array_list_is_valid.coverage.11"/>
+  <goal id="aws_mul_size_checked$link1.coverage.1"/>
+  <goal id="aws_mul_size_checked$link1.coverage.2"/>
+  <goal id="aws_cryptosdk_edk_list_clear.coverage.1"/>
+  <goal id="aws_cryptosdk_edk_list_clear.coverage.2"/>
+  <goal id="aws_cryptosdk_edk_list_clear.coverage.7"/>
+  <goal id="aws_cryptosdk_edk_list_clear.coverage.8"/>
+  <goal id="aws_array_list_is_bounded.coverage.1"/>
+  <goal id="aws_array_list_clear.coverage.1"/>
+  <goal id="aws_array_list_clear.coverage.2"/>
+  <goal id="aws_array_list_clear.coverage.3"/>
+  <goal id="aws_array_list_clear.coverage.4"/>
+  <goal id="aws_array_list_clear.coverage.5"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.1"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.3"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.4"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.6"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.7"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.9"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.10"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.11"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.1"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.3"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.4"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.7"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.8"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.9"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.12"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.13"/>
+  <goal id="bounded_malloc.coverage.1"/>
+  <goal id="bounded_malloc.coverage.2"/>
+  <goal id="aws_mul_u64_checked$link1.coverage.1"/>
+  <goal id="aws_mul_u64_checked$link1.coverage.4"/>
+  <goal id="aws_mul_u64_checked$link1.coverage.5"/>
+</test>
+
+<test>
+  <inputs/>
+  <goal id="harness.coverage.1"/>
+  <goal id="harness.coverage.2"/>
+  <goal id="harness.coverage.3"/>
+  <goal id="harness.coverage.4"/>
+  <goal id="harness.coverage.5"/>
+  <goal id="aws_mul_size_checked.coverage.1"/>
+  <goal id="aws_mul_size_checked.coverage.2"/>
+  <goal id="aws_mul_u64_checked.coverage.1"/>
+  <goal id="aws_mul_u64_checked.coverage.4"/>
+  <goal id="aws_mul_u64_checked.coverage.5"/>
+  <goal id="can_fail_allocator.coverage.1"/>
+  <goal id="aws_array_list_is_valid.coverage.1"/>
+  <goal id="aws_array_list_is_valid.coverage.3"/>
+  <goal id="aws_array_list_is_valid.coverage.4"/>
+  <goal id="aws_array_list_is_valid.coverage.6"/>
+  <goal id="aws_array_list_is_valid.coverage.7"/>
+  <goal id="aws_array_list_is_valid.coverage.9"/>
+  <goal id="aws_array_list_is_valid.coverage.10"/>
+  <goal id="aws_array_list_is_valid.coverage.11"/>
+  <goal id="aws_mul_size_checked$link1.coverage.1"/>
+  <goal id="aws_mul_size_checked$link1.coverage.2"/>
+  <goal id="aws_cryptosdk_edk_list_clear.coverage.1"/>
+  <goal id="aws_cryptosdk_edk_list_clear.coverage.2"/>
+  <goal id="aws_cryptosdk_edk_list_clear.coverage.7"/>
+  <goal id="aws_cryptosdk_edk_list_clear.coverage.8"/>
+  <goal id="aws_array_list_is_bounded.coverage.1"/>
+  <goal id="aws_array_list_clear.coverage.1"/>
+  <goal id="aws_array_list_clear.coverage.2"/>
+  <goal id="aws_array_list_clear.coverage.3"/>
+  <goal id="aws_array_list_clear.coverage.4"/>
+  <goal id="aws_array_list_clear.coverage.5"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.1"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.3"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.4"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.6"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.7"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.9"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.10"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.11"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.1"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.3"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.4"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.7"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.8"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.10"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.11"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.12"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.13"/>
+  <goal id="bounded_malloc.coverage.1"/>
+  <goal id="bounded_malloc.coverage.2"/>
+  <goal id="aws_mul_u64_checked$link1.coverage.1"/>
+  <goal id="aws_mul_u64_checked$link1.coverage.4"/>
+  <goal id="aws_mul_u64_checked$link1.coverage.5"/>
+</test>
+
+<test>
+  <inputs/>
+  <goal id="harness.coverage.1"/>
+  <goal id="harness.coverage.2"/>
+  <goal id="harness.coverage.3"/>
+  <goal id="harness.coverage.4"/>
+  <goal id="aws_cryptosdk_edk_is_valid.coverage.1"/>
+  <goal id="aws_mul_size_checked.coverage.1"/>
+  <goal id="aws_mul_size_checked.coverage.2"/>
+  <goal id="aws_mul_u64_checked.coverage.1"/>
+  <goal id="aws_mul_u64_checked.coverage.4"/>
+  <goal id="aws_mul_u64_checked.coverage.5"/>
+  <goal id="can_fail_allocator.coverage.1"/>
+  <goal id="aws_array_list_length.coverage.1"/>
+  <goal id="aws_array_list_length.coverage.3"/>
+  <goal id="aws_array_list_length.coverage.4"/>
+  <goal id="aws_array_list_length.coverage.6"/>
+  <goal id="aws_array_list_length.coverage.7"/>
+  <goal id="aws_array_list_length.coverage.8"/>
+  <goal id="aws_array_list_is_valid.coverage.1"/>
+  <goal id="aws_array_list_is_valid.coverage.3"/>
+  <goal id="aws_array_list_is_valid.coverage.4"/>
+  <goal id="aws_array_list_is_valid.coverage.6"/>
+  <goal id="aws_array_list_is_valid.coverage.7"/>
+  <goal id="aws_array_list_is_valid.coverage.9"/>
+  <goal id="aws_array_list_is_valid.coverage.10"/>
+  <goal id="aws_array_list_is_valid.coverage.11"/>
+  <goal id="aws_mul_size_checked$link1.coverage.1"/>
+  <goal id="aws_mul_size_checked$link1.coverage.2"/>
+  <goal id="aws_cryptosdk_edk_clean_up.coverage.1"/>
+  <goal id="aws_cryptosdk_edk_list_clear.coverage.1"/>
+  <goal id="aws_cryptosdk_edk_list_clear.coverage.2"/>
+  <goal id="aws_cryptosdk_edk_list_clear.coverage.3"/>
+  <goal id="aws_cryptosdk_edk_list_clear.coverage.4"/>
+  <goal id="aws_cryptosdk_edk_list_clear.coverage.5"/>
+  <goal id="aws_array_list_get_at_ptr.coverage.1"/>
+  <goal id="aws_array_list_get_at_ptr.coverage.2"/>
+  <goal id="aws_array_list_get_at_ptr.coverage.3"/>
+  <goal id="aws_array_list_get_at_ptr.coverage.4"/>
+  <goal id="aws_array_list_get_at_ptr.coverage.5"/>
+  <goal id="aws_array_list_get_at_ptr.coverage.9"/>
+  <goal id="aws_array_list_is_bounded.coverage.1"/>
+  <goal id="aws_byte_buf_is_valid.coverage.1"/>
+  <goal id="aws_byte_buf_is_valid.coverage.2"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.1"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.3"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.4"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.6"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.7"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.9"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.10"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.11"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.1"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.3"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.4"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.7"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.8"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.10"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.11"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.12"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.13"/>
+  <goal id="bounded_malloc.coverage.1"/>
+  <goal id="bounded_malloc.coverage.2"/>
+  <goal id="aws_mul_u64_checked$link1.coverage.1"/>
+  <goal id="aws_mul_u64_checked$link1.coverage.4"/>
+  <goal id="aws_mul_u64_checked$link1.coverage.5"/>
+</test>
+
+<test>
+  <inputs/>
+  <goal id="harness.coverage.1"/>
+  <goal id="harness.coverage.2"/>
+  <goal id="harness.coverage.3"/>
+  <goal id="harness.coverage.4"/>
+  <goal id="aws_cryptosdk_edk_is_valid.coverage.1"/>
+  <goal id="aws_cryptosdk_edk_is_valid.coverage.2"/>
+  <goal id="aws_cryptosdk_edk_is_valid.coverage.5"/>
+  <goal id="aws_cryptosdk_edk_is_valid.coverage.6"/>
+  <goal id="aws_cryptosdk_edk_is_valid.coverage.9"/>
+  <goal id="aws_cryptosdk_edk_is_valid.coverage.10"/>
+  <goal id="aws_mul_size_checked.coverage.1"/>
+  <goal id="aws_mul_size_checked.coverage.2"/>
+  <goal id="aws_mul_u64_checked.coverage.1"/>
+  <goal id="aws_mul_u64_checked.coverage.4"/>
+  <goal id="aws_mul_u64_checked.coverage.5"/>
+  <goal id="can_fail_allocator.coverage.1"/>
+  <goal id="aws_array_list_length.coverage.1"/>
+  <goal id="aws_array_list_length.coverage.3"/>
+  <goal id="aws_array_list_length.coverage.4"/>
+  <goal id="aws_array_list_length.coverage.6"/>
+  <goal id="aws_array_list_length.coverage.7"/>
+  <goal id="aws_array_list_length.coverage.8"/>
+  <goal id="aws_array_list_is_valid.coverage.1"/>
+  <goal id="aws_array_list_is_valid.coverage.3"/>
+  <goal id="aws_array_list_is_valid.coverage.4"/>
+  <goal id="aws_array_list_is_valid.coverage.6"/>
+  <goal id="aws_array_list_is_valid.coverage.7"/>
+  <goal id="aws_array_list_is_valid.coverage.9"/>
+  <goal id="aws_array_list_is_valid.coverage.10"/>
+  <goal id="aws_array_list_is_valid.coverage.11"/>
+  <goal id="aws_mul_size_checked$link1.coverage.1"/>
+  <goal id="aws_mul_size_checked$link1.coverage.2"/>
+  <goal id="aws_cryptosdk_edk_clean_up.coverage.1"/>
+  <goal id="aws_cryptosdk_edk_clean_up.coverage.2"/>
+  <goal id="aws_cryptosdk_edk_list_clear.coverage.1"/>
+  <goal id="aws_cryptosdk_edk_list_clear.coverage.2"/>
+  <goal id="aws_cryptosdk_edk_list_clear.coverage.3"/>
+  <goal id="aws_cryptosdk_edk_list_clear.coverage.4"/>
+  <goal id="aws_cryptosdk_edk_list_clear.coverage.5"/>
+  <goal id="aws_array_list_get_at_ptr.coverage.1"/>
+  <goal id="aws_array_list_get_at_ptr.coverage.2"/>
+  <goal id="aws_array_list_get_at_ptr.coverage.3"/>
+  <goal id="aws_array_list_get_at_ptr.coverage.4"/>
+  <goal id="aws_array_list_get_at_ptr.coverage.5"/>
+  <goal id="aws_array_list_get_at_ptr.coverage.9"/>
+  <goal id="aws_array_list_is_bounded.coverage.1"/>
+  <goal id="aws_byte_buf_is_valid.coverage.1"/>
+  <goal id="aws_byte_buf_is_valid.coverage.2"/>
+  <goal id="aws_byte_buf_is_valid.coverage.3"/>
+  <goal id="aws_byte_buf_is_valid.coverage.5"/>
+  <goal id="aws_byte_buf_is_valid.coverage.7"/>
+  <goal id="aws_byte_buf_is_valid.coverage.8"/>
+  <goal id="aws_byte_buf_is_valid.coverage.10"/>
+  <goal id="aws_byte_buf_is_valid.coverage.12"/>
+  <goal id="aws_byte_buf_is_valid.coverage.13"/>
+  <goal id="aws_byte_buf_is_valid.coverage.15"/>
+  <goal id="aws_byte_buf_is_valid.coverage.16"/>
+  <goal id="aws_byte_buf_is_valid.coverage.17"/>
+  <goal id="aws_byte_buf_is_valid.coverage.19"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.1"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.3"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.4"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.6"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.7"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.9"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.10"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.11"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.1"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.3"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.4"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.7"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.8"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.10"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.11"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.12"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.13"/>
+  <goal id="bounded_malloc.coverage.1"/>
+  <goal id="bounded_malloc.coverage.2"/>
+  <goal id="aws_mul_u64_checked$link1.coverage.1"/>
+  <goal id="aws_mul_u64_checked$link1.coverage.4"/>
+  <goal id="aws_mul_u64_checked$link1.coverage.5"/>
+</test>
+
+<test>
+  <inputs/>
+  <goal id="harness.coverage.1"/>
+  <goal id="harness.coverage.2"/>
+  <goal id="harness.coverage.3"/>
+  <goal id="harness.coverage.4"/>
+  <goal id="aws_cryptosdk_edk_is_valid.coverage.1"/>
+  <goal id="aws_cryptosdk_edk_is_valid.coverage.2"/>
+  <goal id="aws_cryptosdk_edk_is_valid.coverage.5"/>
+  <goal id="aws_cryptosdk_edk_is_valid.coverage.6"/>
+  <goal id="aws_cryptosdk_edk_is_valid.coverage.9"/>
+  <goal id="aws_cryptosdk_edk_is_valid.coverage.10"/>
+  <goal id="aws_mul_size_checked.coverage.1"/>
+  <goal id="aws_mul_size_checked.coverage.2"/>
+  <goal id="aws_mul_u64_checked.coverage.1"/>
+  <goal id="aws_mul_u64_checked.coverage.4"/>
+  <goal id="aws_mul_u64_checked.coverage.5"/>
+  <goal id="can_fail_allocator.coverage.1"/>
+  <goal id="aws_array_list_length.coverage.1"/>
+  <goal id="aws_array_list_length.coverage.3"/>
+  <goal id="aws_array_list_length.coverage.4"/>
+  <goal id="aws_array_list_length.coverage.6"/>
+  <goal id="aws_array_list_length.coverage.7"/>
+  <goal id="aws_array_list_length.coverage.8"/>
+  <goal id="aws_array_list_is_valid.coverage.1"/>
+  <goal id="aws_array_list_is_valid.coverage.3"/>
+  <goal id="aws_array_list_is_valid.coverage.4"/>
+  <goal id="aws_array_list_is_valid.coverage.6"/>
+  <goal id="aws_array_list_is_valid.coverage.7"/>
+  <goal id="aws_array_list_is_valid.coverage.9"/>
+  <goal id="aws_array_list_is_valid.coverage.10"/>
+  <goal id="aws_array_list_is_valid.coverage.11"/>
+  <goal id="aws_mul_size_checked$link1.coverage.1"/>
+  <goal id="aws_mul_size_checked$link1.coverage.2"/>
+  <goal id="aws_cryptosdk_edk_clean_up.coverage.1"/>
+  <goal id="aws_cryptosdk_edk_clean_up.coverage.2"/>
+  <goal id="aws_cryptosdk_edk_list_clear.coverage.1"/>
+  <goal id="aws_cryptosdk_edk_list_clear.coverage.2"/>
+  <goal id="aws_cryptosdk_edk_list_clear.coverage.3"/>
+  <goal id="aws_cryptosdk_edk_list_clear.coverage.4"/>
+  <goal id="aws_cryptosdk_edk_list_clear.coverage.5"/>
+  <goal id="aws_array_list_get_at_ptr.coverage.1"/>
+  <goal id="aws_array_list_get_at_ptr.coverage.2"/>
+  <goal id="aws_array_list_get_at_ptr.coverage.3"/>
+  <goal id="aws_array_list_get_at_ptr.coverage.4"/>
+  <goal id="aws_array_list_get_at_ptr.coverage.5"/>
+  <goal id="aws_array_list_get_at_ptr.coverage.9"/>
+  <goal id="aws_array_list_is_bounded.coverage.1"/>
+  <goal id="aws_byte_buf_is_valid.coverage.1"/>
+  <goal id="aws_byte_buf_is_valid.coverage.2"/>
+  <goal id="aws_byte_buf_is_valid.coverage.4"/>
+  <goal id="aws_byte_buf_is_valid.coverage.5"/>
+  <goal id="aws_byte_buf_is_valid.coverage.7"/>
+  <goal id="aws_byte_buf_is_valid.coverage.8"/>
+  <goal id="aws_byte_buf_is_valid.coverage.10"/>
+  <goal id="aws_byte_buf_is_valid.coverage.11"/>
+  <goal id="aws_byte_buf_is_valid.coverage.13"/>
+  <goal id="aws_byte_buf_is_valid.coverage.15"/>
+  <goal id="aws_byte_buf_is_valid.coverage.16"/>
+  <goal id="aws_byte_buf_is_valid.coverage.17"/>
+  <goal id="aws_byte_buf_is_valid.coverage.19"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.1"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.3"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.4"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.6"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.7"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.9"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.10"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.11"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.1"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.3"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.4"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.7"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.8"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.10"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.11"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.12"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.13"/>
+  <goal id="bounded_malloc.coverage.1"/>
+  <goal id="bounded_malloc.coverage.2"/>
+  <goal id="aws_mul_u64_checked$link1.coverage.1"/>
+  <goal id="aws_mul_u64_checked$link1.coverage.4"/>
+  <goal id="aws_mul_u64_checked$link1.coverage.5"/>
+</test>
+
+<test>
+  <inputs/>
+  <goal id="harness.coverage.1"/>
+  <goal id="harness.coverage.2"/>
+  <goal id="harness.coverage.3"/>
+  <goal id="harness.coverage.4"/>
+  <goal id="aws_cryptosdk_edk_is_valid.coverage.1"/>
+  <goal id="aws_mul_size_checked.coverage.1"/>
+  <goal id="aws_mul_size_checked.coverage.2"/>
+  <goal id="aws_mul_u64_checked.coverage.1"/>
+  <goal id="aws_mul_u64_checked.coverage.4"/>
+  <goal id="aws_mul_u64_checked.coverage.5"/>
+  <goal id="can_fail_allocator.coverage.1"/>
+  <goal id="aws_array_list_length.coverage.1"/>
+  <goal id="aws_array_list_length.coverage.3"/>
+  <goal id="aws_array_list_length.coverage.4"/>
+  <goal id="aws_array_list_length.coverage.6"/>
+  <goal id="aws_array_list_length.coverage.7"/>
+  <goal id="aws_array_list_length.coverage.8"/>
+  <goal id="aws_array_list_is_valid.coverage.1"/>
+  <goal id="aws_array_list_is_valid.coverage.3"/>
+  <goal id="aws_array_list_is_valid.coverage.4"/>
+  <goal id="aws_array_list_is_valid.coverage.6"/>
+  <goal id="aws_array_list_is_valid.coverage.7"/>
+  <goal id="aws_array_list_is_valid.coverage.9"/>
+  <goal id="aws_array_list_is_valid.coverage.10"/>
+  <goal id="aws_array_list_is_valid.coverage.11"/>
+  <goal id="aws_mul_size_checked$link1.coverage.1"/>
+  <goal id="aws_mul_size_checked$link1.coverage.2"/>
+  <goal id="aws_cryptosdk_edk_clean_up.coverage.1"/>
+  <goal id="aws_cryptosdk_edk_list_clear.coverage.1"/>
+  <goal id="aws_cryptosdk_edk_list_clear.coverage.2"/>
+  <goal id="aws_cryptosdk_edk_list_clear.coverage.3"/>
+  <goal id="aws_cryptosdk_edk_list_clear.coverage.4"/>
+  <goal id="aws_cryptosdk_edk_list_clear.coverage.5"/>
+  <goal id="aws_array_list_get_at_ptr.coverage.1"/>
+  <goal id="aws_array_list_get_at_ptr.coverage.2"/>
+  <goal id="aws_array_list_get_at_ptr.coverage.3"/>
+  <goal id="aws_array_list_get_at_ptr.coverage.4"/>
+  <goal id="aws_array_list_get_at_ptr.coverage.5"/>
+  <goal id="aws_array_list_get_at_ptr.coverage.9"/>
+  <goal id="aws_array_list_is_bounded.coverage.1"/>
+  <goal id="aws_byte_buf_is_valid.coverage.1"/>
+  <goal id="aws_byte_buf_is_valid.coverage.2"/>
+  <goal id="aws_byte_buf_is_valid.coverage.4"/>
+  <goal id="aws_byte_buf_is_valid.coverage.5"/>
+  <goal id="aws_byte_buf_is_valid.coverage.7"/>
+  <goal id="aws_byte_buf_is_valid.coverage.8"/>
+  <goal id="aws_byte_buf_is_valid.coverage.10"/>
+  <goal id="aws_byte_buf_is_valid.coverage.11"/>
+  <goal id="aws_byte_buf_is_valid.coverage.13"/>
+  <goal id="aws_byte_buf_is_valid.coverage.14"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.1"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.3"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.4"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.6"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.7"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.9"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.10"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.11"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.1"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.3"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.4"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.7"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.8"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.10"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.11"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.12"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.13"/>
+  <goal id="bounded_malloc.coverage.1"/>
+  <goal id="bounded_malloc.coverage.2"/>
+  <goal id="aws_mul_u64_checked$link1.coverage.1"/>
+  <goal id="aws_mul_u64_checked$link1.coverage.4"/>
+  <goal id="aws_mul_u64_checked$link1.coverage.5"/>
+</test>
+
+<test>
+  <inputs/>
+  <goal id="harness.coverage.1"/>
+  <goal id="harness.coverage.2"/>
+  <goal id="harness.coverage.3"/>
+  <goal id="harness.coverage.4"/>
+  <goal id="aws_cryptosdk_edk_is_valid.coverage.1"/>
+  <goal id="aws_cryptosdk_edk_is_valid.coverage.2"/>
+  <goal id="aws_cryptosdk_edk_is_valid.coverage.3"/>
+  <goal id="aws_cryptosdk_edk_is_valid.coverage.4"/>
+  <goal id="aws_cryptosdk_edk_is_valid.coverage.6"/>
+  <goal id="aws_cryptosdk_edk_is_valid.coverage.9"/>
+  <goal id="aws_cryptosdk_edk_is_valid.coverage.10"/>
+  <goal id="aws_mul_size_checked.coverage.1"/>
+  <goal id="aws_mul_size_checked.coverage.2"/>
+  <goal id="aws_mul_u64_checked.coverage.1"/>
+  <goal id="aws_mul_u64_checked.coverage.4"/>
+  <goal id="aws_mul_u64_checked.coverage.5"/>
+  <goal id="aws_array_list_length.coverage.1"/>
+  <goal id="aws_array_list_length.coverage.3"/>
+  <goal id="aws_array_list_length.coverage.4"/>
+  <goal id="aws_array_list_length.coverage.6"/>
+  <goal id="aws_array_list_length.coverage.7"/>
+  <goal id="aws_array_list_length.coverage.8"/>
+  <goal id="aws_array_list_is_valid.coverage.1"/>
+  <goal id="aws_array_list_is_valid.coverage.3"/>
+  <goal id="aws_array_list_is_valid.coverage.4"/>
+  <goal id="aws_array_list_is_valid.coverage.6"/>
+  <goal id="aws_array_list_is_valid.coverage.7"/>
+  <goal id="aws_array_list_is_valid.coverage.9"/>
+  <goal id="aws_array_list_is_valid.coverage.10"/>
+  <goal id="aws_array_list_is_valid.coverage.11"/>
+  <goal id="aws_mul_size_checked$link1.coverage.1"/>
+  <goal id="aws_mul_size_checked$link1.coverage.2"/>
+  <goal id="aws_cryptosdk_edk_clean_up.coverage.1"/>
+  <goal id="aws_cryptosdk_edk_clean_up.coverage.2"/>
+  <goal id="aws_cryptosdk_edk_list_clear.coverage.1"/>
+  <goal id="aws_cryptosdk_edk_list_clear.coverage.2"/>
+  <goal id="aws_cryptosdk_edk_list_clear.coverage.3"/>
+  <goal id="aws_cryptosdk_edk_list_clear.coverage.4"/>
+  <goal id="aws_cryptosdk_edk_list_clear.coverage.5"/>
+  <goal id="aws_array_list_get_at_ptr.coverage.1"/>
+  <goal id="aws_array_list_get_at_ptr.coverage.2"/>
+  <goal id="aws_array_list_get_at_ptr.coverage.3"/>
+  <goal id="aws_array_list_get_at_ptr.coverage.4"/>
+  <goal id="aws_array_list_get_at_ptr.coverage.5"/>
+  <goal id="aws_array_list_get_at_ptr.coverage.9"/>
+  <goal id="aws_array_list_is_bounded.coverage.1"/>
+  <goal id="aws_byte_buf_is_valid.coverage.1"/>
+  <goal id="aws_byte_buf_is_valid.coverage.2"/>
+  <goal id="aws_byte_buf_is_valid.coverage.3"/>
+  <goal id="aws_byte_buf_is_valid.coverage.4"/>
+  <goal id="aws_byte_buf_is_valid.coverage.5"/>
+  <goal id="aws_byte_buf_is_valid.coverage.7"/>
+  <goal id="aws_byte_buf_is_valid.coverage.8"/>
+  <goal id="aws_byte_buf_is_valid.coverage.10"/>
+  <goal id="aws_byte_buf_is_valid.coverage.11"/>
+  <goal id="aws_byte_buf_is_valid.coverage.12"/>
+  <goal id="aws_byte_buf_is_valid.coverage.13"/>
+  <goal id="aws_byte_buf_is_valid.coverage.14"/>
+  <goal id="aws_byte_buf_is_valid.coverage.15"/>
+  <goal id="aws_byte_buf_is_valid.coverage.16"/>
+  <goal id="aws_byte_buf_is_valid.coverage.17"/>
+  <goal id="aws_byte_buf_is_valid.coverage.19"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.1"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.3"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.4"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.6"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.7"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.9"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.10"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.11"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.1"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.3"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.4"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.7"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.8"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.9"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.12"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.13"/>
+  <goal id="bounded_malloc.coverage.1"/>
+  <goal id="bounded_malloc.coverage.2"/>
+  <goal id="aws_mul_u64_checked$link1.coverage.1"/>
+  <goal id="aws_mul_u64_checked$link1.coverage.4"/>
+  <goal id="aws_mul_u64_checked$link1.coverage.5"/>
+</test>
+
+<test>
+  <inputs/>
+  <goal id="harness.coverage.1"/>
+  <goal id="harness.coverage.2"/>
+  <goal id="harness.coverage.3"/>
+  <goal id="harness.coverage.4"/>
+  <goal id="aws_cryptosdk_edk_is_valid.coverage.1"/>
+  <goal id="aws_cryptosdk_edk_is_valid.coverage.2"/>
+  <goal id="aws_cryptosdk_edk_is_valid.coverage.3"/>
+  <goal id="aws_cryptosdk_edk_is_valid.coverage.4"/>
+  <goal id="aws_cryptosdk_edk_is_valid.coverage.6"/>
+  <goal id="aws_cryptosdk_edk_is_valid.coverage.7"/>
+  <goal id="aws_mul_size_checked.coverage.1"/>
+  <goal id="aws_mul_size_checked.coverage.2"/>
+  <goal id="aws_mul_u64_checked.coverage.1"/>
+  <goal id="aws_mul_u64_checked.coverage.4"/>
+  <goal id="aws_mul_u64_checked.coverage.5"/>
+  <goal id="aws_array_list_length.coverage.1"/>
+  <goal id="aws_array_list_length.coverage.3"/>
+  <goal id="aws_array_list_length.coverage.4"/>
+  <goal id="aws_array_list_length.coverage.6"/>
+  <goal id="aws_array_list_length.coverage.7"/>
+  <goal id="aws_array_list_length.coverage.8"/>
+  <goal id="aws_array_list_is_valid.coverage.1"/>
+  <goal id="aws_array_list_is_valid.coverage.3"/>
+  <goal id="aws_array_list_is_valid.coverage.4"/>
+  <goal id="aws_array_list_is_valid.coverage.6"/>
+  <goal id="aws_array_list_is_valid.coverage.7"/>
+  <goal id="aws_array_list_is_valid.coverage.9"/>
+  <goal id="aws_array_list_is_valid.coverage.10"/>
+  <goal id="aws_array_list_is_valid.coverage.11"/>
+  <goal id="aws_mul_size_checked$link1.coverage.1"/>
+  <goal id="aws_mul_size_checked$link1.coverage.2"/>
+  <goal id="aws_cryptosdk_edk_clean_up.coverage.1"/>
+  <goal id="aws_cryptosdk_edk_list_clear.coverage.1"/>
+  <goal id="aws_cryptosdk_edk_list_clear.coverage.2"/>
+  <goal id="aws_cryptosdk_edk_list_clear.coverage.3"/>
+  <goal id="aws_cryptosdk_edk_list_clear.coverage.4"/>
+  <goal id="aws_cryptosdk_edk_list_clear.coverage.5"/>
+  <goal id="aws_array_list_get_at_ptr.coverage.1"/>
+  <goal id="aws_array_list_get_at_ptr.coverage.2"/>
+  <goal id="aws_array_list_get_at_ptr.coverage.3"/>
+  <goal id="aws_array_list_get_at_ptr.coverage.4"/>
+  <goal id="aws_array_list_get_at_ptr.coverage.5"/>
+  <goal id="aws_array_list_get_at_ptr.coverage.9"/>
+  <goal id="aws_array_list_is_bounded.coverage.1"/>
+  <goal id="aws_byte_buf_is_valid.coverage.1"/>
+  <goal id="aws_byte_buf_is_valid.coverage.2"/>
+  <goal id="aws_byte_buf_is_valid.coverage.4"/>
+  <goal id="aws_byte_buf_is_valid.coverage.5"/>
+  <goal id="aws_byte_buf_is_valid.coverage.7"/>
+  <goal id="aws_byte_buf_is_valid.coverage.8"/>
+  <goal id="aws_byte_buf_is_valid.coverage.10"/>
+  <goal id="aws_byte_buf_is_valid.coverage.11"/>
+  <goal id="aws_byte_buf_is_valid.coverage.13"/>
+  <goal id="aws_byte_buf_is_valid.coverage.14"/>
+  <goal id="aws_byte_buf_is_valid.coverage.16"/>
+  <goal id="aws_byte_buf_is_valid.coverage.17"/>
+  <goal id="aws_byte_buf_is_valid.coverage.19"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.1"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.3"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.4"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.6"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.7"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.9"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.10"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.11"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.1"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.3"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.4"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.7"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.8"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.9"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.12"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.13"/>
+  <goal id="bounded_malloc.coverage.1"/>
+  <goal id="bounded_malloc.coverage.2"/>
+  <goal id="aws_mul_u64_checked$link1.coverage.1"/>
+  <goal id="aws_mul_u64_checked$link1.coverage.4"/>
+  <goal id="aws_mul_u64_checked$link1.coverage.5"/>
+</test>
+
+<test>
+  <inputs/>
+  <goal id="harness.coverage.1"/>
+  <goal id="harness.coverage.2"/>
+  <goal id="harness.coverage.3"/>
+  <goal id="harness.coverage.4"/>
+  <goal id="aws_cryptosdk_edk_is_valid.coverage.1"/>
+  <goal id="aws_cryptosdk_edk_is_valid.coverage.2"/>
+  <goal id="aws_cryptosdk_edk_is_valid.coverage.3"/>
+  <goal id="aws_cryptosdk_edk_is_valid.coverage.4"/>
+  <goal id="aws_cryptosdk_edk_is_valid.coverage.6"/>
+  <goal id="aws_cryptosdk_edk_is_valid.coverage.7"/>
+  <goal id="aws_mul_size_checked.coverage.1"/>
+  <goal id="aws_mul_size_checked.coverage.2"/>
+  <goal id="aws_mul_u64_checked.coverage.1"/>
+  <goal id="aws_mul_u64_checked.coverage.4"/>
+  <goal id="aws_mul_u64_checked.coverage.5"/>
+  <goal id="aws_array_list_length.coverage.1"/>
+  <goal id="aws_array_list_length.coverage.3"/>
+  <goal id="aws_array_list_length.coverage.4"/>
+  <goal id="aws_array_list_length.coverage.6"/>
+  <goal id="aws_array_list_length.coverage.7"/>
+  <goal id="aws_array_list_length.coverage.8"/>
+  <goal id="aws_array_list_is_valid.coverage.1"/>
+  <goal id="aws_array_list_is_valid.coverage.3"/>
+  <goal id="aws_array_list_is_valid.coverage.4"/>
+  <goal id="aws_array_list_is_valid.coverage.5"/>
+  <goal id="aws_array_list_is_valid.coverage.7"/>
+  <goal id="aws_array_list_is_valid.coverage.9"/>
+  <goal id="aws_array_list_is_valid.coverage.10"/>
+  <goal id="aws_array_list_is_valid.coverage.11"/>
+  <goal id="aws_mul_size_checked$link1.coverage.1"/>
+  <goal id="aws_mul_size_checked$link1.coverage.2"/>
+  <goal id="aws_cryptosdk_edk_clean_up.coverage.1"/>
+  <goal id="aws_cryptosdk_edk_list_clear.coverage.1"/>
+  <goal id="aws_cryptosdk_edk_list_clear.coverage.2"/>
+  <goal id="aws_cryptosdk_edk_list_clear.coverage.3"/>
+  <goal id="aws_cryptosdk_edk_list_clear.coverage.4"/>
+  <goal id="aws_cryptosdk_edk_list_clear.coverage.5"/>
+  <goal id="aws_array_list_get_at_ptr.coverage.1"/>
+  <goal id="aws_array_list_get_at_ptr.coverage.2"/>
+  <goal id="aws_array_list_get_at_ptr.coverage.3"/>
+  <goal id="aws_array_list_get_at_ptr.coverage.4"/>
+  <goal id="aws_array_list_get_at_ptr.coverage.5"/>
+  <goal id="aws_array_list_get_at_ptr.coverage.9"/>
+  <goal id="aws_array_list_is_bounded.coverage.1"/>
+  <goal id="aws_byte_buf_is_valid.coverage.1"/>
+  <goal id="aws_byte_buf_is_valid.coverage.2"/>
+  <goal id="aws_byte_buf_is_valid.coverage.4"/>
+  <goal id="aws_byte_buf_is_valid.coverage.5"/>
+  <goal id="aws_byte_buf_is_valid.coverage.7"/>
+  <goal id="aws_byte_buf_is_valid.coverage.8"/>
+  <goal id="aws_byte_buf_is_valid.coverage.10"/>
+  <goal id="aws_byte_buf_is_valid.coverage.11"/>
+  <goal id="aws_byte_buf_is_valid.coverage.13"/>
+  <goal id="aws_byte_buf_is_valid.coverage.14"/>
+  <goal id="aws_byte_buf_is_valid.coverage.16"/>
+  <goal id="aws_byte_buf_is_valid.coverage.17"/>
+  <goal id="aws_byte_buf_is_valid.coverage.19"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.1"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.3"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.4"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.5"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.7"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.9"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.10"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.11"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.1"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.2"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.4"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.7"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.8"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.9"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.12"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.13"/>
+  <goal id="bounded_malloc.coverage.1"/>
+  <goal id="bounded_malloc.coverage.2"/>
+  <goal id="aws_mul_u64_checked$link1.coverage.1"/>
+  <goal id="aws_mul_u64_checked$link1.coverage.4"/>
+  <goal id="aws_mul_u64_checked$link1.coverage.5"/>
+</test>
+
+<test>
+  <inputs/>
+  <goal id="harness.coverage.1"/>
+  <goal id="harness.coverage.2"/>
+  <goal id="harness.coverage.3"/>
+  <goal id="harness.coverage.4"/>
+  <goal id="aws_cryptosdk_edk_is_valid.coverage.1"/>
+  <goal id="aws_cryptosdk_edk_is_valid.coverage.2"/>
+  <goal id="aws_cryptosdk_edk_is_valid.coverage.3"/>
+  <goal id="aws_cryptosdk_edk_is_valid.coverage.4"/>
+  <goal id="aws_cryptosdk_edk_is_valid.coverage.6"/>
+  <goal id="aws_cryptosdk_edk_is_valid.coverage.7"/>
+  <goal id="aws_cryptosdk_edk_is_valid.coverage.8"/>
+  <goal id="aws_cryptosdk_edk_is_valid.coverage.10"/>
+  <goal id="aws_mul_size_checked.coverage.1"/>
+  <goal id="aws_mul_size_checked.coverage.2"/>
+  <goal id="aws_mul_u64_checked.coverage.1"/>
+  <goal id="aws_mul_u64_checked.coverage.4"/>
+  <goal id="aws_mul_u64_checked.coverage.5"/>
+  <goal id="aws_array_list_length.coverage.1"/>
+  <goal id="aws_array_list_length.coverage.3"/>
+  <goal id="aws_array_list_length.coverage.4"/>
+  <goal id="aws_array_list_length.coverage.6"/>
+  <goal id="aws_array_list_length.coverage.7"/>
+  <goal id="aws_array_list_length.coverage.8"/>
+  <goal id="aws_array_list_is_valid.coverage.1"/>
+  <goal id="aws_array_list_is_valid.coverage.3"/>
+  <goal id="aws_array_list_is_valid.coverage.4"/>
+  <goal id="aws_array_list_is_valid.coverage.5"/>
+  <goal id="aws_array_list_is_valid.coverage.7"/>
+  <goal id="aws_array_list_is_valid.coverage.9"/>
+  <goal id="aws_array_list_is_valid.coverage.10"/>
+  <goal id="aws_array_list_is_valid.coverage.11"/>
+  <goal id="aws_mul_size_checked$link1.coverage.1"/>
+  <goal id="aws_mul_size_checked$link1.coverage.2"/>
+  <goal id="aws_cryptosdk_edk_clean_up.coverage.1"/>
+  <goal id="aws_cryptosdk_edk_clean_up.coverage.2"/>
+  <goal id="aws_cryptosdk_edk_list_clear.coverage.1"/>
+  <goal id="aws_cryptosdk_edk_list_clear.coverage.2"/>
+  <goal id="aws_cryptosdk_edk_list_clear.coverage.3"/>
+  <goal id="aws_cryptosdk_edk_list_clear.coverage.4"/>
+  <goal id="aws_cryptosdk_edk_list_clear.coverage.5"/>
+  <goal id="aws_array_list_get_at_ptr.coverage.1"/>
+  <goal id="aws_array_list_get_at_ptr.coverage.2"/>
+  <goal id="aws_array_list_get_at_ptr.coverage.3"/>
+  <goal id="aws_array_list_get_at_ptr.coverage.4"/>
+  <goal id="aws_array_list_get_at_ptr.coverage.5"/>
+  <goal id="aws_array_list_get_at_ptr.coverage.9"/>
+  <goal id="aws_array_list_is_bounded.coverage.1"/>
+  <goal id="aws_byte_buf_is_valid.coverage.1"/>
+  <goal id="aws_byte_buf_is_valid.coverage.2"/>
+  <goal id="aws_byte_buf_is_valid.coverage.4"/>
+  <goal id="aws_byte_buf_is_valid.coverage.5"/>
+  <goal id="aws_byte_buf_is_valid.coverage.7"/>
+  <goal id="aws_byte_buf_is_valid.coverage.8"/>
+  <goal id="aws_byte_buf_is_valid.coverage.10"/>
+  <goal id="aws_byte_buf_is_valid.coverage.11"/>
+  <goal id="aws_byte_buf_is_valid.coverage.13"/>
+  <goal id="aws_byte_buf_is_valid.coverage.14"/>
+  <goal id="aws_byte_buf_is_valid.coverage.16"/>
+  <goal id="aws_byte_buf_is_valid.coverage.17"/>
+  <goal id="aws_byte_buf_is_valid.coverage.19"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.1"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.3"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.4"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.5"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.7"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.9"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.10"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.11"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.1"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.2"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.4"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.7"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.8"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.9"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.12"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.13"/>
+  <goal id="bounded_malloc.coverage.1"/>
+  <goal id="bounded_malloc.coverage.2"/>
+  <goal id="aws_mul_u64_checked$link1.coverage.1"/>
+  <goal id="aws_mul_u64_checked$link1.coverage.4"/>
+  <goal id="aws_mul_u64_checked$link1.coverage.5"/>
+</test>
+
+<test>
+  <inputs/>
+  <goal id="harness.coverage.1"/>
+  <goal id="harness.coverage.2"/>
+  <goal id="harness.coverage.3"/>
+  <goal id="harness.coverage.4"/>
+  <goal id="aws_cryptosdk_edk_is_valid.coverage.1"/>
+  <goal id="aws_cryptosdk_edk_is_valid.coverage.2"/>
+  <goal id="aws_cryptosdk_edk_is_valid.coverage.3"/>
+  <goal id="aws_cryptosdk_edk_is_valid.coverage.4"/>
+  <goal id="aws_cryptosdk_edk_is_valid.coverage.6"/>
+  <goal id="aws_cryptosdk_edk_is_valid.coverage.7"/>
+  <goal id="aws_cryptosdk_edk_is_valid.coverage.8"/>
+  <goal id="aws_cryptosdk_edk_is_valid.coverage.10"/>
+  <goal id="aws_mul_size_checked.coverage.1"/>
+  <goal id="aws_mul_size_checked.coverage.2"/>
+  <goal id="aws_mul_u64_checked.coverage.1"/>
+  <goal id="aws_mul_u64_checked.coverage.4"/>
+  <goal id="aws_mul_u64_checked.coverage.5"/>
+  <goal id="aws_array_list_length.coverage.1"/>
+  <goal id="aws_array_list_length.coverage.3"/>
+  <goal id="aws_array_list_length.coverage.4"/>
+  <goal id="aws_array_list_length.coverage.6"/>
+  <goal id="aws_array_list_length.coverage.7"/>
+  <goal id="aws_array_list_length.coverage.8"/>
+  <goal id="aws_array_list_is_valid.coverage.1"/>
+  <goal id="aws_array_list_is_valid.coverage.3"/>
+  <goal id="aws_array_list_is_valid.coverage.4"/>
+  <goal id="aws_array_list_is_valid.coverage.5"/>
+  <goal id="aws_array_list_is_valid.coverage.7"/>
+  <goal id="aws_array_list_is_valid.coverage.9"/>
+  <goal id="aws_array_list_is_valid.coverage.10"/>
+  <goal id="aws_array_list_is_valid.coverage.11"/>
+  <goal id="aws_mul_size_checked$link1.coverage.1"/>
+  <goal id="aws_mul_size_checked$link1.coverage.2"/>
+  <goal id="aws_cryptosdk_edk_clean_up.coverage.1"/>
+  <goal id="aws_cryptosdk_edk_clean_up.coverage.2"/>
+  <goal id="aws_cryptosdk_edk_list_clear.coverage.1"/>
+  <goal id="aws_cryptosdk_edk_list_clear.coverage.2"/>
+  <goal id="aws_cryptosdk_edk_list_clear.coverage.3"/>
+  <goal id="aws_cryptosdk_edk_list_clear.coverage.4"/>
+  <goal id="aws_cryptosdk_edk_list_clear.coverage.5"/>
+  <goal id="aws_array_list_get_at_ptr.coverage.1"/>
+  <goal id="aws_array_list_get_at_ptr.coverage.2"/>
+  <goal id="aws_array_list_get_at_ptr.coverage.3"/>
+  <goal id="aws_array_list_get_at_ptr.coverage.4"/>
+  <goal id="aws_array_list_get_at_ptr.coverage.5"/>
+  <goal id="aws_array_list_get_at_ptr.coverage.9"/>
+  <goal id="aws_array_list_is_bounded.coverage.1"/>
+  <goal id="aws_byte_buf_is_valid.coverage.1"/>
+  <goal id="aws_byte_buf_is_valid.coverage.2"/>
+  <goal id="aws_byte_buf_is_valid.coverage.3"/>
+  <goal id="aws_byte_buf_is_valid.coverage.4"/>
+  <goal id="aws_byte_buf_is_valid.coverage.5"/>
+  <goal id="aws_byte_buf_is_valid.coverage.6"/>
+  <goal id="aws_byte_buf_is_valid.coverage.7"/>
+  <goal id="aws_byte_buf_is_valid.coverage.8"/>
+  <goal id="aws_byte_buf_is_valid.coverage.10"/>
+  <goal id="aws_byte_buf_is_valid.coverage.11"/>
+  <goal id="aws_byte_buf_is_valid.coverage.12"/>
+  <goal id="aws_byte_buf_is_valid.coverage.13"/>
+  <goal id="aws_byte_buf_is_valid.coverage.14"/>
+  <goal id="aws_byte_buf_is_valid.coverage.15"/>
+  <goal id="aws_byte_buf_is_valid.coverage.16"/>
+  <goal id="aws_byte_buf_is_valid.coverage.17"/>
+  <goal id="aws_byte_buf_is_valid.coverage.19"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.1"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.3"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.4"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.5"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.7"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.9"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.10"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.11"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.1"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.2"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.4"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.7"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.8"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.9"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.12"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.13"/>
+  <goal id="bounded_malloc.coverage.1"/>
+  <goal id="bounded_malloc.coverage.2"/>
+  <goal id="aws_mul_u64_checked$link1.coverage.1"/>
+  <goal id="aws_mul_u64_checked$link1.coverage.4"/>
+  <goal id="aws_mul_u64_checked$link1.coverage.5"/>
+</test>
+
+<test>
+  <inputs/>
+  <goal id="harness.coverage.1"/>
+  <goal id="harness.coverage.2"/>
+  <goal id="harness.coverage.3"/>
+  <goal id="harness.coverage.4"/>
+  <goal id="aws_cryptosdk_edk_is_valid.coverage.1"/>
+  <goal id="aws_cryptosdk_edk_is_valid.coverage.2"/>
+  <goal id="aws_cryptosdk_edk_is_valid.coverage.3"/>
+  <goal id="aws_cryptosdk_edk_is_valid.coverage.4"/>
+  <goal id="aws_cryptosdk_edk_is_valid.coverage.6"/>
+  <goal id="aws_cryptosdk_edk_is_valid.coverage.7"/>
+  <goal id="aws_cryptosdk_edk_is_valid.coverage.8"/>
+  <goal id="aws_cryptosdk_edk_is_valid.coverage.10"/>
+  <goal id="aws_mul_size_checked.coverage.1"/>
+  <goal id="aws_mul_size_checked.coverage.2"/>
+  <goal id="aws_mul_u64_checked.coverage.1"/>
+  <goal id="aws_mul_u64_checked.coverage.4"/>
+  <goal id="aws_mul_u64_checked.coverage.5"/>
+  <goal id="aws_array_list_length.coverage.1"/>
+  <goal id="aws_array_list_length.coverage.3"/>
+  <goal id="aws_array_list_length.coverage.4"/>
+  <goal id="aws_array_list_length.coverage.6"/>
+  <goal id="aws_array_list_length.coverage.7"/>
+  <goal id="aws_array_list_length.coverage.8"/>
+  <goal id="aws_array_list_is_valid.coverage.1"/>
+  <goal id="aws_array_list_is_valid.coverage.3"/>
+  <goal id="aws_array_list_is_valid.coverage.4"/>
+  <goal id="aws_array_list_is_valid.coverage.5"/>
+  <goal id="aws_array_list_is_valid.coverage.7"/>
+  <goal id="aws_array_list_is_valid.coverage.9"/>
+  <goal id="aws_array_list_is_valid.coverage.10"/>
+  <goal id="aws_array_list_is_valid.coverage.11"/>
+  <goal id="aws_mul_size_checked$link1.coverage.1"/>
+  <goal id="aws_mul_size_checked$link1.coverage.2"/>
+  <goal id="aws_cryptosdk_edk_clean_up.coverage.1"/>
+  <goal id="aws_cryptosdk_edk_clean_up.coverage.2"/>
+  <goal id="aws_cryptosdk_edk_list_clear.coverage.1"/>
+  <goal id="aws_cryptosdk_edk_list_clear.coverage.2"/>
+  <goal id="aws_cryptosdk_edk_list_clear.coverage.3"/>
+  <goal id="aws_cryptosdk_edk_list_clear.coverage.4"/>
+  <goal id="aws_cryptosdk_edk_list_clear.coverage.5"/>
+  <goal id="aws_array_list_get_at_ptr.coverage.1"/>
+  <goal id="aws_array_list_get_at_ptr.coverage.2"/>
+  <goal id="aws_array_list_get_at_ptr.coverage.3"/>
+  <goal id="aws_array_list_get_at_ptr.coverage.4"/>
+  <goal id="aws_array_list_get_at_ptr.coverage.5"/>
+  <goal id="aws_array_list_get_at_ptr.coverage.9"/>
+  <goal id="aws_array_list_is_bounded.coverage.1"/>
+  <goal id="aws_byte_buf_is_valid.coverage.1"/>
+  <goal id="aws_byte_buf_is_valid.coverage.2"/>
+  <goal id="aws_byte_buf_is_valid.coverage.3"/>
+  <goal id="aws_byte_buf_is_valid.coverage.4"/>
+  <goal id="aws_byte_buf_is_valid.coverage.5"/>
+  <goal id="aws_byte_buf_is_valid.coverage.6"/>
+  <goal id="aws_byte_buf_is_valid.coverage.7"/>
+  <goal id="aws_byte_buf_is_valid.coverage.8"/>
+  <goal id="aws_byte_buf_is_valid.coverage.9"/>
+  <goal id="aws_byte_buf_is_valid.coverage.10"/>
+  <goal id="aws_byte_buf_is_valid.coverage.11"/>
+  <goal id="aws_byte_buf_is_valid.coverage.12"/>
+  <goal id="aws_byte_buf_is_valid.coverage.13"/>
+  <goal id="aws_byte_buf_is_valid.coverage.14"/>
+  <goal id="aws_byte_buf_is_valid.coverage.15"/>
+  <goal id="aws_byte_buf_is_valid.coverage.16"/>
+  <goal id="aws_byte_buf_is_valid.coverage.17"/>
+  <goal id="aws_byte_buf_is_valid.coverage.19"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.1"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.3"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.4"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.5"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.7"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.9"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.10"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.11"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.1"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.2"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.4"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.7"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.8"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.9"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.12"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.13"/>
+  <goal id="bounded_malloc.coverage.1"/>
+  <goal id="bounded_malloc.coverage.2"/>
+  <goal id="aws_mul_u64_checked$link1.coverage.1"/>
+  <goal id="aws_mul_u64_checked$link1.coverage.4"/>
+  <goal id="aws_mul_u64_checked$link1.coverage.5"/>
+</test>
+
+<test>
+  <inputs/>
+  <goal id="harness.coverage.1"/>
+  <goal id="harness.coverage.2"/>
+  <goal id="harness.coverage.3"/>
+  <goal id="harness.coverage.4"/>
+  <goal id="harness.coverage.5"/>
+  <goal id="aws_cryptosdk_edk_is_valid.coverage.1"/>
+  <goal id="aws_cryptosdk_edk_is_valid.coverage.2"/>
+  <goal id="aws_cryptosdk_edk_is_valid.coverage.3"/>
+  <goal id="aws_cryptosdk_edk_is_valid.coverage.4"/>
+  <goal id="aws_cryptosdk_edk_is_valid.coverage.6"/>
+  <goal id="aws_cryptosdk_edk_is_valid.coverage.7"/>
+  <goal id="aws_cryptosdk_edk_is_valid.coverage.8"/>
+  <goal id="aws_cryptosdk_edk_is_valid.coverage.10"/>
+  <goal id="aws_mul_size_checked.coverage.1"/>
+  <goal id="aws_mul_size_checked.coverage.2"/>
+  <goal id="aws_mul_u64_checked.coverage.1"/>
+  <goal id="aws_mul_u64_checked.coverage.4"/>
+  <goal id="aws_mul_u64_checked.coverage.5"/>
+  <goal id="aws_array_list_length.coverage.1"/>
+  <goal id="aws_array_list_length.coverage.3"/>
+  <goal id="aws_array_list_length.coverage.4"/>
+  <goal id="aws_array_list_length.coverage.6"/>
+  <goal id="aws_array_list_length.coverage.7"/>
+  <goal id="aws_array_list_length.coverage.8"/>
+  <goal id="aws_array_list_is_valid.coverage.1"/>
+  <goal id="aws_array_list_is_valid.coverage.3"/>
+  <goal id="aws_array_list_is_valid.coverage.4"/>
+  <goal id="aws_array_list_is_valid.coverage.5"/>
+  <goal id="aws_array_list_is_valid.coverage.7"/>
+  <goal id="aws_array_list_is_valid.coverage.9"/>
+  <goal id="aws_array_list_is_valid.coverage.10"/>
+  <goal id="aws_array_list_is_valid.coverage.11"/>
+  <goal id="aws_mul_size_checked$link1.coverage.1"/>
+  <goal id="aws_mul_size_checked$link1.coverage.2"/>
+  <goal id="aws_cryptosdk_edk_clean_up.coverage.1"/>
+  <goal id="aws_cryptosdk_edk_clean_up.coverage.2"/>
+  <goal id="aws_cryptosdk_edk_list_clear.coverage.1"/>
+  <goal id="aws_cryptosdk_edk_list_clear.coverage.2"/>
+  <goal id="aws_cryptosdk_edk_list_clear.coverage.3"/>
+  <goal id="aws_cryptosdk_edk_list_clear.coverage.4"/>
+  <goal id="aws_cryptosdk_edk_list_clear.coverage.5"/>
+  <goal id="aws_cryptosdk_edk_list_clear.coverage.6"/>
+  <goal id="aws_cryptosdk_edk_list_clear.coverage.7"/>
+  <goal id="aws_cryptosdk_edk_list_clear.coverage.8"/>
+  <goal id="aws_array_list_get_at_ptr.coverage.1"/>
+  <goal id="aws_array_list_get_at_ptr.coverage.2"/>
+  <goal id="aws_array_list_get_at_ptr.coverage.3"/>
+  <goal id="aws_array_list_get_at_ptr.coverage.4"/>
+  <goal id="aws_array_list_get_at_ptr.coverage.5"/>
+  <goal id="aws_array_list_get_at_ptr.coverage.9"/>
+  <goal id="aws_array_list_is_bounded.coverage.1"/>
+  <goal id="aws_byte_buf_is_valid.coverage.1"/>
+  <goal id="aws_byte_buf_is_valid.coverage.2"/>
+  <goal id="aws_byte_buf_is_valid.coverage.3"/>
+  <goal id="aws_byte_buf_is_valid.coverage.4"/>
+  <goal id="aws_byte_buf_is_valid.coverage.5"/>
+  <goal id="aws_byte_buf_is_valid.coverage.6"/>
+  <goal id="aws_byte_buf_is_valid.coverage.7"/>
+  <goal id="aws_byte_buf_is_valid.coverage.8"/>
+  <goal id="aws_byte_buf_is_valid.coverage.9"/>
+  <goal id="aws_byte_buf_is_valid.coverage.10"/>
+  <goal id="aws_byte_buf_is_valid.coverage.11"/>
+  <goal id="aws_byte_buf_is_valid.coverage.13"/>
+  <goal id="aws_byte_buf_is_valid.coverage.14"/>
+  <goal id="aws_byte_buf_is_valid.coverage.16"/>
+  <goal id="aws_byte_buf_is_valid.coverage.17"/>
+  <goal id="aws_byte_buf_is_valid.coverage.19"/>
+  <goal id="aws_array_list_clear.coverage.1"/>
+  <goal id="aws_array_list_clear.coverage.2"/>
+  <goal id="aws_array_list_clear.coverage.3"/>
+  <goal id="aws_array_list_clear.coverage.4"/>
+  <goal id="aws_array_list_clear.coverage.5"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.1"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.3"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.4"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.5"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.7"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.9"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.10"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.11"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.1"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.2"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.4"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.7"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.8"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.9"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.12"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.13"/>
+  <goal id="bounded_malloc.coverage.1"/>
+  <goal id="bounded_malloc.coverage.2"/>
+  <goal id="aws_mul_u64_checked$link1.coverage.1"/>
+  <goal id="aws_mul_u64_checked$link1.coverage.4"/>
+  <goal id="aws_mul_u64_checked$link1.coverage.5"/>
+</test>
+
+<test>
+  <inputs/>
+  <goal id="harness.coverage.1"/>
+  <goal id="harness.coverage.2"/>
+  <goal id="aws_array_list_is_bounded.coverage.1"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.1"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.2"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.4"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.5"/>
+</test>
+
+<test>
+  <inputs/>
+  <goal id="harness.coverage.1"/>
+  <goal id="harness.coverage.2"/>
+  <goal id="harness.coverage.3"/>
+  <goal id="harness.coverage.4"/>
+  <goal id="harness.coverage.5"/>
+  <goal id="aws_mul_size_checked.coverage.1"/>
+  <goal id="aws_mul_size_checked.coverage.2"/>
+  <goal id="aws_mul_u64_checked.coverage.1"/>
+  <goal id="aws_mul_u64_checked.coverage.4"/>
+  <goal id="aws_mul_u64_checked.coverage.5"/>
+  <goal id="can_fail_allocator.coverage.1"/>
+  <goal id="aws_array_list_is_valid.coverage.1"/>
+  <goal id="aws_array_list_is_valid.coverage.3"/>
+  <goal id="aws_array_list_is_valid.coverage.4"/>
+  <goal id="aws_array_list_is_valid.coverage.5"/>
+  <goal id="aws_array_list_is_valid.coverage.7"/>
+  <goal id="aws_array_list_is_valid.coverage.8"/>
+  <goal id="aws_array_list_is_valid.coverage.10"/>
+  <goal id="aws_array_list_is_valid.coverage.11"/>
+  <goal id="aws_mul_size_checked$link1.coverage.1"/>
+  <goal id="aws_mul_size_checked$link1.coverage.2"/>
+  <goal id="aws_cryptosdk_edk_list_clear.coverage.1"/>
+  <goal id="aws_cryptosdk_edk_list_clear.coverage.2"/>
+  <goal id="aws_cryptosdk_edk_list_clear.coverage.7"/>
+  <goal id="aws_cryptosdk_edk_list_clear.coverage.8"/>
+  <goal id="aws_array_list_is_bounded.coverage.1"/>
+  <goal id="aws_array_list_clear.coverage.1"/>
+  <goal id="aws_array_list_clear.coverage.2"/>
+  <goal id="aws_array_list_clear.coverage.4"/>
+  <goal id="aws_array_list_clear.coverage.5"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.1"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.3"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.4"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.5"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.7"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.8"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.10"/>
+  <goal id="aws_array_list_is_valid$link1.coverage.11"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.1"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.2"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.4"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.5"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.6"/>
+  <goal id="ensure_array_list_has_allocated_data_member.coverage.13"/>
+  <goal id="aws_mul_u64_checked$link1.coverage.1"/>
+  <goal id="aws_mul_u64_checked$link1.coverage.4"/>
+  <goal id="aws_mul_u64_checked$link1.coverage.5"/>
+</test>
+
+</cprover>

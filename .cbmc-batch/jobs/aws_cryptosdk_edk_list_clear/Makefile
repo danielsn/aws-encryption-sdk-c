@@ -1,0 +1,45 @@
+# Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+#
+# Licensed under the Apache License, Version 2.0 (the "License"). You may not use
+# this file except in compliance with the License. A copy of the License is
+# located at
+#
+#     http://aws.amazon.com/apache2.0/
+#
+# or in the "license" file accompanying this file. This file is distributed on an
+# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+# implied. See the License for the specific language governing permissions and
+# limitations under the License.
+
+###########
+# if Makefile.local exists, use it. This provides a way to override the defaults
+sinclude ../Makefile.local
+#otherwise, use the default values
+include ../Makefile.local_default
+
+# Necessary to get full coverage when using functions from math.h
+MAX_INITIAL_ITEM_ALLOCATION ?= 1
+
+DEF += -DMAX_INITIAL_ITEM_ALLOCATION=$(MAX_INITIAL_ITEM_ALLOCATION)
+
+CBMC_FLAGS += --stop-on-fail
+
+## At the moment this is not used in the Makefile.common of encryption-sdk
+UNWINDSET += aws_cryptosdk_edk_list_clear.0:$(shell echo $$(($(MAX_INITIAL_ITEM_ALLOCATION) + 1)))
+
+ENTRY = aws_cryptosdk_edk_list_clear
+
+OBJS += $(SRCDIR)/$(ENTRY)_harness.goto
+OBJS +=	$(SRCDIR)/c-enc-sdk-src/edk.goto
+OBJS +=	$(SRCDIR)/c-common-src/array_list.goto
+OBJS +=	$(SRCDIR)/c-common-src/byte_buf.goto
+OBJS +=	$(SRCDIR)/c-common-src/common.goto
+OBJS +=	$(SRCDIR)/c-common-src/error.goto
+OBJS += $(SRCDIR)/helper-src/make_common_data_structures.goto
+OBJS +=	$(SRCDIR)/c-common-helper-src/make_common_data_structures.goto
+OBJS +=	$(SRCDIR)/c-common-helper-src/proof_allocators.goto
+OBJS +=	$(SRCDIR)/c-common-helper-src/utils.goto
+
+###########
+
+include ../Makefile.common
