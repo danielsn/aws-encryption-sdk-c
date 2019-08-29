@@ -30,9 +30,9 @@ ABSTRACTIONS += $(SRCDIR)/c-common-helper-stubs/memcmp_override_no_op.c
 CBMCFLAGS +=
 
 DEFINES += -DNUM_ELEMS=$(NUM_ELEMS)
-DEFINES += -DARRAY_LIST_TYPE="struct aws_cryptosdk_edk"
+#DEFINES += -DARRAY_LIST_TYPE="struct aws_cryptosdk_edk"
 DEFINES += -DAWS_NO_STATIC_IMPL
-DEFINES += -DAWS_STATIC_IMPL=AWS_COMMON_API
+#DEFINES += -DAWS_STATIC_IMPL=AWS_COMMON_API
 
 DEPENDENCIES += $(SRCDIR)/c-common-helper-src/make_common_data_structures.c
 DEPENDENCIES += $(SRCDIR)/c-common-helper-src/proof_allocators.c
