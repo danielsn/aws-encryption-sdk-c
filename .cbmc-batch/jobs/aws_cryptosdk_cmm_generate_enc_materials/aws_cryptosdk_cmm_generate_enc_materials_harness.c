@@ -38,8 +38,8 @@ void ensure_aws_cryptosdk_enc_materials_has_allocated_members(struct aws_cryptos
     ensure_trace_has_allocated_records(&materials->keyring_trace, MAX_STRING_LEN);
 
     // TODO: restore once CBMC bug is fixed
-    //__CPROVER_assume(aws_cryptosdk_edk_list_is_bounded(&materials->encrypted_data_keys, NUM_EDK_LIST_ELEMS));
-    // ensure_cryptosdk_edk_list_has_allocated_list(&materials->encrypted_data_keys);
+    __CPROVER_assume(aws_cryptosdk_edk_list_is_bounded(&materials->encrypted_data_keys, NUM_EDK_LIST_ELEMS));
+    ensure_cryptosdk_edk_list_has_allocated_list(&materials->encrypted_data_keys);
 
     // signctx
     materials->signctx = malloc(sizeof(struct aws_cryptosdk_sig_ctx));
