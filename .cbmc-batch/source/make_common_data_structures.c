@@ -20,11 +20,11 @@
 #include <ec_utils.h>
 #include <evp_utils.h>
 
+#include <aws/cryptosdk/private/keyring_trace.h>
+#include <make_common_data_structures.h>
 #include <proof_helpers/cryptosdk/make_common_data_structures.h>
 #include <proof_helpers/make_common_data_structures.h>
 #include <proof_helpers/proof_allocators.h>
-#include <make_common_data_structures.h>
-#include <aws/cryptosdk/private/keyring_trace.h>
 
 void ensure_md_context_has_allocated_members(struct aws_cryptosdk_md_context *ctx) {
     ctx->alloc      = nondet_bool() ? NULL : can_fail_allocator();
@@ -98,6 +98,7 @@ void ensure_cryptosdk_edk_list_has_allocated_list_elements(struct aws_array_list
     for (size_t i = 0; i < list->length; ++i) {
         ensure_cryptosdk_edk_has_allocated_members(&(list->data[i]));
     }
+}
 
 void ensure_alg_properties_has_allocated_names(struct aws_cryptosdk_alg_properties *const alg_props) {
     size_t md_name_size;
@@ -110,12 +111,11 @@ void ensure_alg_properties_has_allocated_names(struct aws_cryptosdk_alg_properti
 
 void ensure_record_has_allocated_members(struct aws_cryptosdk_keyring_trace_record *record, size_t max_len) {
     record->wrapping_key_namespace = ensure_string_is_allocated_bounded_length(max_len);
-    record->wrapping_key_name = ensure_string_is_allocated_bounded_length(max_len);
-    record->flags = malloc(sizeof(uint32_t));
-
+    record->wrapping_key_name      = ensure_string_is_allocated_bounded_length(max_len);
+    record->flags                  = malloc(sizeof(uint32_t));
 }
 
-void ensure_trace_has_allocated_records(struct aws_array_list *trace, size_t max_len){
+void ensure_trace_has_allocated_records(struct aws_array_list *trace, size_t max_len) {
     /* iterate over each record in the keyring trace */
     size_t num_records = aws_array_list_length(trace);
     for (size_t idx = 0; idx < num_records; ++idx) {
