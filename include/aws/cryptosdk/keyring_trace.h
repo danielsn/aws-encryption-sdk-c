@@ -83,7 +83,7 @@ extern "C" {
 #endif
 
 /**
- * Evaluates the set of properties that define the shape of all valid 
+ * Evaluates the set of properties that define the shape of all valid
  * aws_cryptosdk_keyring_trace_record structures.
  */
 AWS_CRYPTOSDK_API

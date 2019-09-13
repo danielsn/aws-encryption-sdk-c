@@ -17,10 +17,9 @@
 #include <aws/common/string.h>
 #include <aws/cryptosdk/private/keyring_trace.h>
 #include <aws/cryptosdk/private/utils.h>
+#include <make_common_data_structures.h>
 #include <proof_helpers/make_common_data_structures.h>
 #include <proof_helpers/utils.h>
-#include <make_common_data_structures.h>
-
 
 void aws_cryptosdk_keyring_trace_add_record_buf_harness() {
     /* data structure */

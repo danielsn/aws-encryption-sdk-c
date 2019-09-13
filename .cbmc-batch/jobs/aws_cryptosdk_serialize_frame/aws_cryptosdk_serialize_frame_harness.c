@@ -46,5 +46,5 @@ void harness() {
         // Assert that the ciphertext buffer is zeroed in case of failure
         assert_all_zeroes(ciphertext_buf.buffer, ciphertext_buf.capacity);
         assert(ciphertext_buf.len == 0);
-    }   
+    }
 }
