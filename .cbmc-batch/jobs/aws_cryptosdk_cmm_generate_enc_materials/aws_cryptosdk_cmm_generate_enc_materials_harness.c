@@ -70,7 +70,7 @@ void aws_cryptosdk_cmm_generate_enc_materials_harness() {
     const struct aws_cryptosdk_cmm_vt vtable = { .vt_size                = sizeof(struct aws_cryptosdk_cmm_vt),
                                                  .name                   = ensure_c_str_is_allocated(SIZE_MAX),
                                                  .destroy                = nondet_voidp(),
-                                                 .generate_enc_materials = generate_enc_materials,
+                                                 .generate_enc_materials = nondet_bool() ? NULL : generate_enc_materials,
                                                  .decrypt_materials      = nondet_voidp() };
     __CPROVER_assume(aws_cryptosdk_cmm_vtable_is_valid(&vtable));
 

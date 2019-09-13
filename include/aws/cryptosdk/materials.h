@@ -190,7 +190,7 @@ struct aws_cryptosdk_dec_materials {
 bool aws_cryptosdk_dec_materials_is_valid(const struct aws_cryptosdk_dec_materials *materials) {
     return AWS_OBJECT_PTR_IS_WRITABLE(materials) && aws_allocator_is_valid(materials->alloc) &&
            aws_byte_buf_is_valid(&materials->unencrypted_data_key) &&
-           // keyring trace
+           aws_cryptosdk_keyring_trace_is_valid(&materials->keyring_trace) &&
            aws_cryptosdk_sig_ctx_is_valid(materials->signctx);
 }
 
@@ -432,7 +432,7 @@ AWS_CRYPTOSDK_STATIC_INLINE int aws_cryptosdk_cmm_generate_enc_materials(
     AWS_PRECONDITION(aws_cryptosdk_cmm_base_is_valid(cmm));
     AWS_PRECONDITION(AWS_OBJECT_PTR_IS_WRITABLE(output));
     AWS_PRECONDITION(aws_cryptosdk_enc_request_is_valid(request));
-
+    *output = NULL;
     AWS_CRYPTOSDK_PRIVATE_VF_CALL(generate_enc_materials, cmm, output, request);
     AWS_POSTCONDITION(ret == AWS_OP_ERR || aws_cryptosdk_enc_materials_is_valid(*output));
     return ret;
