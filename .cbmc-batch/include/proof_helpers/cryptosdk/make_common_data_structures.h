@@ -46,3 +46,9 @@ bool aws_cryptosdk_edk_list_elements_are_bounded(const struct aws_array_list *co
 void ensure_cryptosdk_edk_list_has_allocated_list(struct aws_array_list *list);
 
 void ensure_cryptosdk_edk_list_has_allocated_list_elements(struct aws_array_list *list);
+
+void ensure_alg_properties_has_allocated_names(struct aws_cryptosdk_alg_properties *const alg_props);
+
+void ensure_record_has_allocated_members(struct aws_cryptosdk_keyring_trace_record *record, size_t max_len);
+
+void ensure_trace_has_allocated_records(struct aws_array_list *trace, size_t max_len);

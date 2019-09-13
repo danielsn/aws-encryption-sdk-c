@@ -126,6 +126,11 @@ struct aws_cryptosdk_enc_request {
     uint64_t plaintext_size;
 };
 
+bool aws_cryptosdk_enc_request_is_valid(const struct aws_cryptosdk_enc_request *request) {
+    return AWS_OBJECT_PTR_IS_WRITABLE(request) && aws_allocator_is_valid(request->alloc) &&
+           aws_hash_table_is_valid(request->enc_ctx);
+}
+
 /**
  * Materials returned from a CMM generate_enc_materials operation
  */
@@ -141,6 +146,19 @@ struct aws_cryptosdk_enc_materials {
     enum aws_cryptosdk_alg_id alg;
 };
 
+bool aws_cryptosdk_enc_materials_is_valid(const struct aws_cryptosdk_enc_materials *materials) {
+    if (!AWS_OBJECT_PTR_IS_WRITABLE(materials)) {
+        return false;
+    }
+    bool allocator_valid     = aws_allocator_is_valid(materials->alloc);
+    bool data_key_valid      = aws_byte_buf_is_valid(&materials->unencrypted_data_key);
+    bool keyring_trace_valid = aws_cryptosdk_keyring_trace_is_valid(&materials->keyring_trace);
+    // TODO restore once CBMC bug is fixed.
+    bool edk_list_valid      = true;
+    //  bool edk_list = aws_cryptosdk_edk_list_is_valid(&materials->encrypted_data_keys);
+    return allocator_valid && data_key_valid && keyring_trace_valid && edk_list_valid;
+}
+
 /**
  * Decryption request passed from session to CMM
  */
@@ -150,6 +168,11 @@ struct aws_cryptosdk_dec_request {
     struct aws_array_list encrypted_data_keys;
     enum aws_cryptosdk_alg_id alg;
 };
+
+bool aws_cryptosdk_dec_request_is_valid(const struct aws_cryptosdk_dec_request *request) {
+    return AWS_OBJECT_PTR_IS_WRITABLE(request) && aws_allocator_is_valid(request->alloc) &&
+           aws_hash_table_is_valid(request->enc_ctx) && aws_cryptosdk_edk_list_is_valid(&request->encrypted_data_keys);
+}
 
 /**
  * Decryption materials returned from CMM to session
@@ -163,6 +186,13 @@ struct aws_cryptosdk_dec_materials {
     struct aws_cryptosdk_sig_ctx *signctx;
     enum aws_cryptosdk_alg_id alg;
 };
+
+bool aws_cryptosdk_dec_materials_is_valid(const struct aws_cryptosdk_dec_materials *materials) {
+    return AWS_OBJECT_PTR_IS_WRITABLE(materials) && aws_allocator_is_valid(materials->alloc) &&
+           aws_byte_buf_is_valid(&materials->unencrypted_data_key) &&
+           // keyring trace
+           aws_cryptosdk_sig_ctx_is_valid(materials->signctx);
+}
 
 #ifndef AWS_CRYPTOSDK_DOXYGEN /* do not document internal macros */
 
@@ -399,7 +429,12 @@ AWS_CRYPTOSDK_STATIC_INLINE int aws_cryptosdk_cmm_generate_enc_materials(
     struct aws_cryptosdk_cmm *cmm,
     struct aws_cryptosdk_enc_materials **output,
     struct aws_cryptosdk_enc_request *request) {
+    AWS_PRECONDITION(aws_cryptosdk_cmm_base_is_valid(cmm));
+    AWS_PRECONDITION(AWS_OBJECT_PTR_IS_WRITABLE(output));
+    AWS_PRECONDITION(aws_cryptosdk_enc_request_is_valid(request));
+
     AWS_CRYPTOSDK_PRIVATE_VF_CALL(generate_enc_materials, cmm, output, request);
+    AWS_POSTCONDITION(ret == AWS_OP_ERR || aws_cryptosdk_enc_materials_is_valid(*output));
     return ret;
 }
 
