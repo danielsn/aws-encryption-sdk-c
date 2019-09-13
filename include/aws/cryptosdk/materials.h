@@ -154,7 +154,7 @@ bool aws_cryptosdk_enc_materials_is_valid(const struct aws_cryptosdk_enc_materia
     bool data_key_valid      = aws_byte_buf_is_valid(&materials->unencrypted_data_key);
     bool keyring_trace_valid = aws_cryptosdk_keyring_trace_is_valid(&materials->keyring_trace);
     // TODO restore once CBMC bug is fixed. https://issues.amazon.com/issues/Padstone-1581
-    bool edk_list_valid      = true;
+    bool edk_list_valid = true;
     //  bool edk_list = aws_cryptosdk_edk_list_is_valid(&materials->encrypted_data_keys);
     return allocator_valid && data_key_valid && keyring_trace_valid && edk_list_valid;
 }
@@ -171,7 +171,8 @@ struct aws_cryptosdk_dec_request {
 
 bool aws_cryptosdk_dec_request_is_valid(const struct aws_cryptosdk_dec_request *request) {
     return AWS_OBJECT_PTR_IS_WRITABLE(request) && aws_allocator_is_valid(request->alloc) &&
-           aws_hash_table_is_valid(request->enc_ctx) && aws_cryptosdk_edk_list_is_valid(&request->encrypted_data_keys);
+           aws_hash_table_is_valid(
+               request->enc_ctx);  //&& aws_cryptosdk_edk_list_is_valid(&request->encrypted_data_keys);
 }
 
 /**
@@ -451,7 +452,12 @@ AWS_CRYPTOSDK_STATIC_INLINE int aws_cryptosdk_cmm_decrypt_materials(
     struct aws_cryptosdk_cmm *cmm,
     struct aws_cryptosdk_dec_materials **output,
     struct aws_cryptosdk_dec_request *request) {
+    AWS_PRECONDITION(aws_cryptosdk_cmm_base_is_valid(cmm));
+    AWS_PRECONDITION(AWS_OBJECT_PTR_IS_WRITABLE(output));
+    AWS_PRECONDITION(aws_cryptosdk_dec_request_is_valid(request));
+    *output = NULL;
     AWS_CRYPTOSDK_PRIVATE_VF_CALL(decrypt_materials, cmm, output, request);
+    AWS_POSTCONDITION(ret == AWS_OP_ERR || aws_cryptosdk_dec_materials_is_valid(*output));
     return ret;
 }
 
