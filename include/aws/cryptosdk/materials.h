@@ -524,10 +524,10 @@ AWS_CRYPTOSDK_STATIC_INLINE bool aws_cryptosdk_keyring_vt_is_valid(const struct 
  * Constant time check of data-structure invariants for struct aws_cryptosdk_cmm. Since implementations of the
  * cmm may add additional fields, they may define their own, specialized is_valid functions that use this as a base.
  */
-AWS_CRYPTOSDK_STATIC_INLINE bool aws_cryptosdk_keyring_base_is_valid(const struct aws_cryptosdk_keyring *cmm) {
-    return AWS_OBJECT_PTR_IS_WRITABLE(cmm) && aws_atomic_var_is_valid(&cmm->refcount) &&
-           AWS_ATOMIC_VAR_INTVAL(&cmm->refcount) > 0 && AWS_ATOMIC_VAR_INTVAL(&cmm->refcount) <= SIZE_MAX &&
-           aws_cryptosdk_cmm_vtable_is_valid(cmm->vtable);
+AWS_CRYPTOSDK_STATIC_INLINE bool aws_cryptosdk_keyring_base_is_valid(const struct aws_cryptosdk_keyring *keyring) {
+    return AWS_OBJECT_PTR_IS_WRITABLE(keyring) && aws_atomic_var_is_valid(&keyring->refcount) &&
+           AWS_ATOMIC_VAR_INTVAL(&keyring->refcount) > 0 && AWS_ATOMIC_VAR_INTVAL(&keyring->refcount) <= SIZE_MAX &&
+           aws_cryptosdk_keyring_vt_is_valid(keyring->vtable);
 }
 
 /**
@@ -548,6 +548,7 @@ AWS_CRYPTOSDK_STATIC_INLINE void aws_cryptosdk_keyring_base_init(
  * Decrements the reference count on the keyring; if the new reference count is zero, the keyring is destroyed.
  */
 AWS_CRYPTOSDK_STATIC_INLINE void aws_cryptosdk_keyring_release(struct aws_cryptosdk_keyring *keyring) {
+    AWS_PRECONDITION(!keyring || aws_cryptosdk_keyring_base_is_valid(keyring));
     if (keyring && aws_cryptosdk_private_refcount_down(&keyring->refcount)) {
         AWS_CRYPTOSDK_PRIVATE_VF_CALL_NO_RETURN(destroy, keyring);
     }
