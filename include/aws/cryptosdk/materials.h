@@ -560,7 +560,10 @@ AWS_CRYPTOSDK_STATIC_INLINE void aws_cryptosdk_keyring_release(struct aws_crypto
  */
 AWS_CRYPTOSDK_STATIC_INLINE struct aws_cryptosdk_keyring *aws_cryptosdk_keyring_retain(
     struct aws_cryptosdk_keyring *keyring) {
+    AWS_PRECONDITION(aws_cryptosdk_keyring_base_is_valid(keyring));
+    AWS_PRECONDITION(AWS_ATOMIC_VAR_INTVAL(&keyring->refcount) < SIZE_MAX);
     aws_cryptosdk_private_refcount_up(&keyring->refcount);
+    AWS_POSTCONDITION(aws_cryptosdk_keyring_base_is_valid(keyring));
     return keyring;
 }
 
