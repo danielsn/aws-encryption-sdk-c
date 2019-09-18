@@ -55,14 +55,14 @@ void aws_cryptosdk_enc_materials_destroy(struct aws_cryptosdk_enc_materials *enc
 // TODO: initialization for trailing signature key, if necessary
 struct aws_cryptosdk_dec_materials *aws_cryptosdk_dec_materials_new(
     struct aws_allocator *alloc, enum aws_cryptosdk_alg_id alg) {
+    AWS_PRECONDITION(aws_allocator_is_valid(alloc));
     struct aws_cryptosdk_dec_materials *dec_mat;
     dec_mat = aws_mem_acquire(alloc, sizeof(struct aws_cryptosdk_dec_materials));
     if (!dec_mat) return NULL;
-    dec_mat->alloc                          = alloc;
-    dec_mat->unencrypted_data_key.buffer    = NULL;
-    dec_mat->unencrypted_data_key.allocator = NULL;
-    dec_mat->alg                            = alg;
-    dec_mat->signctx                        = NULL;
+    dec_mat->alloc                = alloc;
+    dec_mat->unencrypted_data_key = (struct aws_byte_buf){ 0 };
+    dec_mat->alg                  = alg;
+    dec_mat->signctx              = NULL;
     if (aws_cryptosdk_keyring_trace_init(alloc, &dec_mat->keyring_trace)) {
         aws_mem_release(alloc, dec_mat);
         return NULL;
