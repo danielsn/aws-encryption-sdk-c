@@ -15,6 +15,11 @@
 #include <aws/cryptosdk/cipher.h>
 #include <aws/cryptosdk/materials.h>
 
+
+
+#include <cipher_openssl.h>
+
+
 struct aws_cryptosdk_enc_materials *aws_cryptosdk_enc_materials_new(
     struct aws_allocator *alloc, enum aws_cryptosdk_alg_id alg) {
     AWS_PRECONDITION(aws_allocator_is_valid(alloc));
@@ -44,11 +49,11 @@ struct aws_cryptosdk_enc_materials *aws_cryptosdk_enc_materials_new(
 
 void aws_cryptosdk_enc_materials_destroy(struct aws_cryptosdk_enc_materials *enc_mat) {
     if (enc_mat) {
-        aws_cryptosdk_sig_abort(enc_mat->signctx);
-        aws_byte_buf_clean_up_secure(&enc_mat->unencrypted_data_key);
-        aws_cryptosdk_edk_list_clean_up(&enc_mat->encrypted_data_keys);
-        aws_cryptosdk_keyring_trace_clean_up(&enc_mat->keyring_trace);
-        aws_mem_release(enc_mat->alloc, enc_mat);
+      aws_cryptosdk_sig_abort(enc_mat->signctx);
+        //aws_byte_buf_clean_up_secure(&enc_mat->unencrypted_data_key);
+	//    aws_cryptosdk_edk_list_clean_up(&enc_mat->encrypted_data_keys);
+        //aws_cryptosdk_keyring_trace_clean_up(&enc_mat->keyring_trace);
+        //aws_mem_release(enc_mat->alloc, enc_mat);
     }
 }
 

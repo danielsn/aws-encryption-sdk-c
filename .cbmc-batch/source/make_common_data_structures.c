@@ -32,7 +32,7 @@ void ensure_md_context_has_allocated_members(struct aws_cryptosdk_md_context *ct
 }
 
 void ensure_sig_ctx_has_allocated_members(struct aws_cryptosdk_sig_ctx *ctx) {
-    ctx->alloc = nondet_bool() ? NULL : can_fail_allocator();
+    ctx->alloc = can_fail_allocator();
     enum aws_cryptosdk_alg_id alg_id;
     ctx->props   = aws_cryptosdk_alg_props(alg_id);
     ctx->keypair = ec_key_nondet_alloc();

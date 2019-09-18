@@ -156,8 +156,9 @@ AWS_CRYPTOSDK_STATIC_INLINE bool aws_cryptosdk_enc_materials_is_valid(
     bool keyring_trace_valid = aws_cryptosdk_keyring_trace_is_valid(&materials->keyring_trace);
     // TODO restore once CBMC bug is fixed. https://issues.amazon.com/issues/Padstone-1581
     bool edk_list_valid = true;
+    bool signctx_valid = aws_cryptosdk_sig_ctx_is_valid_cbmc(materials->signctx);
     //  bool edk_list = aws_cryptosdk_edk_list_is_valid(&materials->encrypted_data_keys);
-    return allocator_valid && data_key_valid && keyring_trace_valid && edk_list_valid;
+    return allocator_valid && data_key_valid && keyring_trace_valid && signctx_valid && edk_list_valid;
 }
 
 /**
@@ -197,7 +198,7 @@ AWS_CRYPTOSDK_STATIC_INLINE bool aws_cryptosdk_dec_materials_is_valid(
     bool allocator_valid            = aws_allocator_is_valid(materials->alloc);
     bool unencrypted_data_key_valid = aws_byte_buf_is_valid(&materials->unencrypted_data_key);
     bool keyring_trace_valid        = aws_cryptosdk_keyring_trace_is_valid(&materials->keyring_trace);
-    bool signctx_valid = (materials->signctx == NULL) || aws_cryptosdk_sig_ctx_is_valid(materials->signctx);
+    bool signctx_valid = (materials->signctx == NULL) || aws_cryptosdk_sig_ctx_is_valid_cbmc(materials->signctx);
     return allocator_valid && unencrypted_data_key_valid && keyring_trace_valid && signctx_valid;
 }
 

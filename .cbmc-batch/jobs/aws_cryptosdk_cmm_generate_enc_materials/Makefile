@@ -52,6 +52,7 @@ DEPENDENCIES += $(SRCDIR)/c-enc-sdk-src/keyring_trace.c
 DEPENDENCIES += $(SRCDIR)/c-enc-sdk-src/edk.c
 DEPENDENCIES += $(SRCDIR)/c-enc-sdk-src/cipher_openssl.c
 DEPENDENCIES += $(SRCDIR)/c-enc-sdk-src/cipher.c
+DEPENDENCIES += $(SRCDIR)/helper-src/cbmc_invariants.c
 DEPENDENCIES += $(SRCDIR)/helper-src/make_common_data_structures.c
 DEPENDENCIES += $(SRCDIR)/c-common-helper-uninline/atomics.c
 ENTRY = aws_cryptosdk_cmm_generate_enc_materials_harness
