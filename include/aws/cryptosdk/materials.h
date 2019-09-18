@@ -126,7 +126,7 @@ struct aws_cryptosdk_enc_request {
     uint64_t plaintext_size;
 };
 
-bool aws_cryptosdk_enc_request_is_valid(const struct aws_cryptosdk_enc_request *request) {
+AWS_CRYPTOSDK_STATIC_INLINE bool aws_cryptosdk_enc_request_is_valid(const struct aws_cryptosdk_enc_request *request) {
     return AWS_OBJECT_PTR_IS_WRITABLE(request) && aws_allocator_is_valid(request->alloc) &&
            aws_hash_table_is_valid(request->enc_ctx);
 }
@@ -146,7 +146,8 @@ struct aws_cryptosdk_enc_materials {
     enum aws_cryptosdk_alg_id alg;
 };
 
-bool aws_cryptosdk_enc_materials_is_valid(const struct aws_cryptosdk_enc_materials *materials) {
+AWS_CRYPTOSDK_STATIC_INLINE bool aws_cryptosdk_enc_materials_is_valid(
+    const struct aws_cryptosdk_enc_materials *materials) {
     if (!AWS_OBJECT_PTR_IS_WRITABLE(materials)) {
         return false;
     }
@@ -169,7 +170,7 @@ struct aws_cryptosdk_dec_request {
     enum aws_cryptosdk_alg_id alg;
 };
 
-bool aws_cryptosdk_dec_request_is_valid(const struct aws_cryptosdk_dec_request *request) {
+AWS_CRYPTOSDK_STATIC_INLINE bool aws_cryptosdk_dec_request_is_valid(const struct aws_cryptosdk_dec_request *request) {
     return AWS_OBJECT_PTR_IS_WRITABLE(request) && aws_allocator_is_valid(request->alloc) &&
            aws_hash_table_is_valid(
                request->enc_ctx);  //&& aws_cryptosdk_edk_list_is_valid(&request->encrypted_data_keys);
@@ -188,7 +189,8 @@ struct aws_cryptosdk_dec_materials {
     enum aws_cryptosdk_alg_id alg;
 };
 
-bool aws_cryptosdk_dec_materials_is_valid(const struct aws_cryptosdk_dec_materials *materials) {
+AWS_CRYPTOSDK_STATIC_INLINE bool aws_cryptosdk_dec_materials_is_valid(
+    const struct aws_cryptosdk_dec_materials *materials) {
     if (!AWS_OBJECT_PTR_IS_WRITABLE(materials)) {
         return false;
     }
@@ -362,7 +364,7 @@ struct aws_cryptosdk_cmm_vt {
 /**
  * Putting this here for now, until we get it merged into the atomics.h in c-common
  */
-bool aws_atomic_var_is_valid(struct aws_atomic_var *var) {
+AWS_CRYPTOSDK_STATIC_INLINE bool aws_atomic_var_is_valid(const struct aws_atomic_var *var) {
     return AWS_OBJECT_PTR_IS_WRITABLE(var);
 }
 

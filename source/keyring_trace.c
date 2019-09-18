@@ -15,7 +15,7 @@
 #include <aws/cryptosdk/private/keyring_trace.h>
 #include <aws/cryptosdk/private/utils.h>
 
-bool aws_cryptosdk_keyring_trace_is_valid(struct aws_array_list *trace) {
+bool aws_cryptosdk_keyring_trace_is_valid(const struct aws_array_list *trace) {
     if (!trace) {
         return false;
     }
@@ -33,7 +33,7 @@ bool aws_cryptosdk_keyring_trace_is_valid(struct aws_array_list *trace) {
     return is_valid;
 }
 
-bool aws_cryptosdk_keyring_trace_record_is_valid(struct aws_cryptosdk_keyring_trace_record *record) {
+bool aws_cryptosdk_keyring_trace_record_is_valid(const struct aws_cryptosdk_keyring_trace_record *record) {
     if (!record) {
         return false;
     }

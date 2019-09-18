@@ -87,13 +87,13 @@ extern "C" {
  * aws_cryptosdk_keyring_trace_record structures.
  */
 AWS_CRYPTOSDK_API
-bool aws_cryptosdk_keyring_trace_record_is_valid(struct aws_cryptosdk_keyring_trace_record *record);
+bool aws_cryptosdk_keyring_trace_record_is_valid(const struct aws_cryptosdk_keyring_trace_record *record);
 
 /**
  * Iterates over each memeber of a keyring_trace and ensures that each is a valid record.
  */
 AWS_CRYPTOSDK_API
-bool aws_cryptosdk_keyring_trace_is_valid(struct aws_array_list *trace);
+bool aws_cryptosdk_keyring_trace_is_valid(const struct aws_array_list *trace);
 
 /**
  * Add a record to the trace with the specified namespace, name, and flags.
