@@ -22,10 +22,10 @@ struct aws_cryptosdk_enc_materials *aws_cryptosdk_enc_materials_new(
     struct aws_cryptosdk_enc_materials *enc_mat = aws_mem_acquire(alloc, sizeof(struct aws_cryptosdk_enc_materials));
 
     if (!enc_mat) return NULL;
-    enc_mat->alloc = alloc;
-    enc_mat->alg   = alg;
-    memset(&enc_mat->unencrypted_data_key, 0, sizeof(struct aws_byte_buf));
-    enc_mat->signctx = NULL;
+    enc_mat->alloc                = alloc;
+    enc_mat->alg                  = alg;
+    enc_mat->unencrypted_data_key = (struct aws_byte_buf){ 0 };
+    enc_mat->signctx              = NULL;
 
     if (aws_cryptosdk_edk_list_init(alloc, &enc_mat->encrypted_data_keys)) {
         aws_mem_release(alloc, enc_mat);
