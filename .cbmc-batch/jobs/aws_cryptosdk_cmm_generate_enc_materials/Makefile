@@ -54,8 +54,7 @@ DEPENDENCIES += $(SRCDIR)/helper-src/cbmc_invariants.goto
 DEPENDENCIES += $(SRCDIR)/helper-src/make_common_data_structures.c
 DEPENDENCIES += $(SRCDIR)/c-common-helper-uninline/atomics.c
 
-ENTRY = aws_cryptosdk_enc_materials_destroy_harness
-
+ENTRY = aws_cryptosdk_cmm_generate_enc_materials_harness
 
 UNWINDSET += aws_cryptosdk_edk_list_clear.0:$(call addone,$(MAX_NUM_ITEMS)) 
 UNWINDSET += aws_cryptosdk_edk_list_elements_are_bounded.0:$(call addone,$(MAX_NUM_ITEMS))

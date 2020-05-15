@@ -426,6 +426,7 @@ AWS_CRYPTOSDK_STATIC_INLINE int aws_cryptosdk_cmm_generate_enc_materials(
     struct aws_cryptosdk_cmm *cmm,
     struct aws_cryptosdk_enc_materials **output,
     struct aws_cryptosdk_enc_request *request) {
+    AWS_ERROR_PRECONDITION(output != NULL);
     AWS_CRYPTOSDK_PRIVATE_VF_CALL(generate_enc_materials, cmm, output, request);
     return ret;
 }
