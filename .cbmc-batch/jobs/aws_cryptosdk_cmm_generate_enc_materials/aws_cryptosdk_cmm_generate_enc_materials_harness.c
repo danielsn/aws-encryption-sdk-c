@@ -73,6 +73,7 @@ int generate_enc_materials(struct aws_cryptosdk_cmm *cmm,
     // Set up the unencrypted_data_key
     __CPROVER_assume(aws_byte_buf_is_bounded(&materials->unencrypted_data_key, MAX_NUM_ITEMS));
     ensure_byte_buf_has_allocated_buffer_member(&materials->unencrypted_data_key);
+    __CPROVER_assume(aws_byte_buf_is_valid(&materials->unencrypted_data_key));
 
     // Set up the edk_list
     // edk_list Precondition: We have a valid list */
@@ -111,25 +112,22 @@ void aws_cryptosdk_cmm_generate_enc_materials_harness() {
 						 .decrypt_materials      = nondet_voidp() };
     __CPROVER_assume(aws_cryptosdk_cmm_vtable_is_valid(&vtable));
 
-    struct aws_cryptosdk_cmm *cmm = can_fail_malloc(sizeof(struct aws_cryptosdk_cmm));
-
-    if (cmm) {
-	cmm->vtable = &vtable;
-	__CPROVER_assume(aws_cryptosdk_cmm_base_is_valid(cmm));
-    }
-
-    //TODO
+    struct aws_cryptosdk_cmm *cmm = can_fail_malloc(sizeof(*cmm));
     __CPROVER_assume(cmm);
+    cmm->vtable = &vtable;
+    __CPROVER_assume(aws_cryptosdk_cmm_base_is_valid(cmm));
     
-    struct aws_cryptosdk_enc_request request;
-    request.alloc = can_fail_allocator();
+    struct aws_cryptosdk_enc_request* request = can_fail_malloc(sizeof(*request));
+    __CPROVER_assume(request);
+    request->alloc = can_fail_allocator();
 
     struct aws_cryptosdk_enc_materials **output = can_fail_malloc(sizeof(*output));
-
+    __CPROVER_assume(output);
+    
     // Run the function under test.
-    if(aws_cryptosdk_cmm_generate_enc_materials(cmm, output, &request) == AWS_OP_SUCCESS) {
+    if(aws_cryptosdk_cmm_generate_enc_materials(cmm, output, request) == AWS_OP_SUCCESS) {
 	assert(aws_cryptosdk_enc_materials_is_valid(*output));
     } else {
-	assert(output == NULL);
+	assert(*output == NULL);
     }
 }
