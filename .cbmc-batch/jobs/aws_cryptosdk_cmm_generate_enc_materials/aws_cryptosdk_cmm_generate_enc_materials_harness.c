@@ -80,21 +80,22 @@ int generate_enc_materials(struct aws_cryptosdk_cmm *cmm,
     ensure_cryptosdk_edk_list_has_allocated_list(&materials->encrypted_data_keys);
     __CPROVER_assume(aws_cryptosdk_edk_list_is_valid(&materials->encrypted_data_keys));
 
-    /* // Stub until https://github.com/diffblue/cbmc/issues/5344 is fixed */
-    /* // edk_list Precondition: The list has valid list elements  */
-    /* /\* */
-    /*   __CPROVER_assume(aws_cryptosdk_edk_list_elements_are_bounded(&materials->encrypted_data_keys, MAX_STRING_LEN)); */
-    /*   ensure_cryptosdk_edk_list_has_allocated_list_elements(&materials->encrypted_data_keys); */
-    /*   __CPROVER_assume(aws_cryptosdk_edk_list_elements_are_valid(&materials->encrypted_data_keys)); */
-    /* *\/ */
-    /* // Set up the keyring trace */
-    /* __CPROVER_assume(aws_array_list_is_bounded( */
-    /* 					       &materials->keyring_trace, MAX_NUM_ITEMS, sizeof(struct aws_cryptosdk_keyring_trace_record))); */
-    /* __CPROVER_assume(materials->keyring_trace.item_size == sizeof(struct aws_cryptosdk_keyring_trace_record)); */
-    /* ensure_array_list_has_allocated_data_member(&materials->keyring_trace); */
-    /* __CPROVER_assume(aws_array_list_is_valid(&materials->keyring_trace)); */
-    /* ensure_trace_has_allocated_records(&materials->keyring_trace, MAX_STRING_LEN); */
-    /* __CPROVER_assume(aws_cryptosdk_keyring_trace_is_valid(&materials->keyring_trace)); */
+    // Stub until https://github.com/diffblue/cbmc/issues/5344 is fixed
+    // edk_list Precondition: The list has valid list elements
+    /*
+      __CPROVER_assume(aws_cryptosdk_edk_list_elements_are_bounded(&materials->encrypted_data_keys, MAX_STRING_LEN));
+      ensure_cryptosdk_edk_list_has_allocated_list_elements(&materials->encrypted_data_keys);
+      __CPROVER_assume(aws_cryptosdk_edk_list_elements_are_valid(&materials->encrypted_data_keys));
+    */
+    
+    // Set up the keyring trace
+    __CPROVER_assume(aws_array_list_is_bounded(
+    					       &materials->keyring_trace, MAX_NUM_ITEMS, sizeof(struct aws_cryptosdk_keyring_trace_record)));
+    __CPROVER_assume(materials->keyring_trace.item_size == sizeof(struct aws_cryptosdk_keyring_trace_record));
+    ensure_array_list_has_allocated_data_member(&materials->keyring_trace);
+    __CPROVER_assume(aws_array_list_is_valid(&materials->keyring_trace));
+    ensure_trace_has_allocated_records(&materials->keyring_trace, MAX_STRING_LEN);
+    __CPROVER_assume(aws_cryptosdk_keyring_trace_is_valid(&materials->keyring_trace));
 
     *output = materials;
     return AWS_OP_SUCCESS;
@@ -126,5 +127,9 @@ void aws_cryptosdk_cmm_generate_enc_materials_harness() {
     struct aws_cryptosdk_enc_materials **output = can_fail_malloc(sizeof(*output));
 
     // Run the function under test.
-    aws_cryptosdk_cmm_generate_enc_materials(cmm, output, &request);
+    if(aws_cryptosdk_cmm_generate_enc_materials(cmm, output, &request) == AWS_OP_SUCCESS) {
+	assert(aws_cryptosdk_enc_materials_is_valid(*output));
+    } else {
+	assert(output == NULL);
+    }
 }
