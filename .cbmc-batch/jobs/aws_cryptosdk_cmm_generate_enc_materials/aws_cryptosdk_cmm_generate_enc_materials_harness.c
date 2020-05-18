@@ -34,7 +34,6 @@ void aws_cryptosdk_edk_list_clean_up(struct aws_array_list *encrypted_data_keys)
     aws_array_list_clean_up(encrypted_data_keys);
 }
 
-
 /**
  * Receives encryption request from user and attempts to generate encryption materials,
  * including an encrypted data key and a list of EDKs for doing encryption.
@@ -45,29 +44,29 @@ void aws_cryptosdk_edk_list_clean_up(struct aws_array_list *encrypted_data_keys)
  * On failure returns AWS_OP_ERR, sets address pointed to by output to NULL, and sets
  * internal AWS error code.
  */
-int generate_enc_materials(struct aws_cryptosdk_cmm *cmm,
-			   struct aws_cryptosdk_enc_materials **output,
-			   struct aws_cryptosdk_enc_request *request)
-{
-    //assert(aws_cryptosdk_cmm_base_is_valid(cmm));
+int generate_enc_materials(
+    struct aws_cryptosdk_cmm *cmm,
+    struct aws_cryptosdk_enc_materials **output,
+    struct aws_cryptosdk_enc_request *request) {
+    // assert(aws_cryptosdk_cmm_base_is_valid(cmm));
     // assert(__CPROVER_w_ok(output, sizeof(*output)));
-    //assert(aws_cryptosdk_enc_request_is_valid(request));
-    
+    // assert(aws_cryptosdk_enc_request_is_valid(request));
+
     struct aws_cryptosdk_enc_materials *materials = can_fail_malloc(sizeof(*materials));
-    if(materials == NULL) {
-	*output = NULL;
-	return AWS_OP_ERR;
+    if (materials == NULL) {
+        *output = NULL;
+        return AWS_OP_ERR;
     }
 
-    //Set up the allocator
+    // Set up the allocator
     materials->alloc = request->alloc;
     __CPROVER_assume(aws_allocator_is_valid(materials->alloc));
 
     // Set up the signctx
     materials->signctx = can_fail_malloc(sizeof(*materials->signctx));
     if (materials->signctx) {
-    	ensure_sig_ctx_has_allocated_members(materials->signctx);
-    	__CPROVER_assume(aws_cryptosdk_sig_ctx_is_valid_cbmc(materials->signctx));
+        ensure_sig_ctx_has_allocated_members(materials->signctx);
+        __CPROVER_assume(aws_cryptosdk_sig_ctx_is_valid_cbmc(materials->signctx));
     }
 
     // Set up the unencrypted_data_key
@@ -87,10 +86,10 @@ int generate_enc_materials(struct aws_cryptosdk_cmm *cmm,
       ensure_cryptosdk_edk_list_has_allocated_list_elements(&materials->encrypted_data_keys);
       __CPROVER_assume(aws_cryptosdk_edk_list_elements_are_valid(&materials->encrypted_data_keys));
     */
-    
+
     // Set up the keyring trace
     __CPROVER_assume(aws_array_list_is_bounded(
-    					       &materials->keyring_trace, MAX_NUM_ITEMS, sizeof(struct aws_cryptosdk_keyring_trace_record)));
+        &materials->keyring_trace, MAX_NUM_ITEMS, sizeof(struct aws_cryptosdk_keyring_trace_record)));
     __CPROVER_assume(materials->keyring_trace.item_size == sizeof(struct aws_cryptosdk_keyring_trace_record));
     ensure_array_list_has_allocated_data_member(&materials->keyring_trace);
     __CPROVER_assume(aws_array_list_is_valid(&materials->keyring_trace));
@@ -99,37 +98,36 @@ int generate_enc_materials(struct aws_cryptosdk_cmm *cmm,
 
     *output = materials;
     return AWS_OP_SUCCESS;
-}  
+}
 
 void aws_cryptosdk_cmm_generate_enc_materials_harness() {
-
-    
-    const struct aws_cryptosdk_cmm_vt vtable = { .vt_size                = sizeof(struct aws_cryptosdk_cmm_vt),
-						 .name                   = ensure_c_str_is_allocated(SIZE_MAX),
-						 .destroy                = nondet_voidp(),
-						 .generate_enc_materials = nondet_bool() ? generate_enc_materials : NULL,
-						 .decrypt_materials      = nondet_voidp() };
+    const struct aws_cryptosdk_cmm_vt vtable = { .vt_size = sizeof(struct aws_cryptosdk_cmm_vt),
+                                                 .name    = ensure_c_str_is_allocated(SIZE_MAX),
+                                                 .destroy = nondet_voidp(),
+                                                 .generate_enc_materials =
+                                                     nondet_bool() ? generate_enc_materials : NULL,
+                                                 .decrypt_materials = nondet_voidp() };
     __CPROVER_assume(aws_cryptosdk_cmm_vtable_is_valid(&vtable));
 
     struct aws_cryptosdk_cmm *cmm = can_fail_malloc(sizeof(struct aws_cryptosdk_cmm));
 
     if (cmm) {
-	cmm->vtable = &vtable;
-	__CPROVER_assume(aws_cryptosdk_cmm_base_is_valid(cmm));
+        cmm->vtable = &vtable;
+        __CPROVER_assume(aws_cryptosdk_cmm_base_is_valid(cmm));
     }
 
-    //TODO
+    // TODO
     __CPROVER_assume(cmm);
-    
+
     struct aws_cryptosdk_enc_request request;
     request.alloc = can_fail_allocator();
 
     struct aws_cryptosdk_enc_materials **output = can_fail_malloc(sizeof(*output));
 
     // Run the function under test.
-    if(aws_cryptosdk_cmm_generate_enc_materials(cmm, output, &request) == AWS_OP_SUCCESS) {
-	assert(aws_cryptosdk_enc_materials_is_valid(*output));
+    if (aws_cryptosdk_cmm_generate_enc_materials(cmm, output, &request) == AWS_OP_SUCCESS) {
+        assert(aws_cryptosdk_enc_materials_is_valid(*output));
     } else {
-	assert(output == NULL);
+        assert(output == NULL);
     }
 }
