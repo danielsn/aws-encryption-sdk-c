@@ -118,6 +118,10 @@ void aws_cryptosdk_cmm_generate_enc_materials_harness() {
     struct aws_cryptosdk_enc_request* request = can_fail_malloc(sizeof(*request));
     __CPROVER_assume(request);
     request->alloc = can_fail_allocator();
+    request->enc_ctx = can_fail_malloc(sizeof(*request->enc_ctx));
+    __CPROVER_assume(request->enc_ctx);
+    ensure_allocated_hash_table(request->enc_ctx, MAX_NUM_ITEMS);
+    __CPROVER_assume(aws_cryptosdk_enc_request_is_valid(request));
 
     struct aws_cryptosdk_enc_materials **output = can_fail_malloc(sizeof(*output));
     __CPROVER_assume(output);

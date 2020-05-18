@@ -44,6 +44,7 @@ DEPENDENCIES += $(SRCDIR)/c-common-helper-src/proof_allocators.c
 DEPENDENCIES += $(SRCDIR)/c-common-helper-src/utils.c
 DEPENDENCIES += $(SRCDIR)/c-common-src/byte_buf.c
 DEPENDENCIES += $(SRCDIR)/c-common-src/common.c
+DEPENDENCIES += $(SRCDIR)/c-common-src/hash_table.c
 DEPENDENCIES += $(SRCDIR)/c-common-src/math.c
 DEPENDENCIES += $(SRCDIR)/c-enc-sdk-src/materials.c
 DEPENDENCIES += $(SRCDIR)/c-enc-sdk-src/keyring_trace.c
